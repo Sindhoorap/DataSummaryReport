@@ -1,0 +1,1254 @@
+{
+    "data":[
+    {
+      "Time": "9:49:15",
+      "Signups": 0,
+      "Concurrency": 1
+    },
+    {
+      "Time": "9:49:30",
+      "Signups": 0,
+      "Concurrency": 82
+    },
+    {
+      "Time": "9:49:45",
+      "Signups": 0,
+      "Concurrency": 538
+    },
+    {
+      "Time": "9:50:00",
+      "Signups": 0,
+      "Concurrency": 1591
+    },
+    {
+      "Time": "9:50:15",
+      "Signups": 0,
+      "Concurrency": 3092
+    },
+    {
+      "Time": "9:50:30",
+      "Signups": 0,
+      "Concurrency": 5370
+    },
+    {
+      "Time": "9:50:45",
+      "Signups": 0,
+      "Concurrency": 7895
+    },
+    {
+      "Time": "9:51:00",
+      "Signups": 0,
+      "Concurrency": 11397
+    },
+    {
+      "Time": "9:51:15",
+      "Signups": 0,
+      "Concurrency": 14990
+    },
+    {
+      "Time": "9:51:30",
+      "Signups": 1.2,
+      "Concurrency": 19618
+    },
+    {
+      "Time": "9:51:45",
+      "Signups": 2.3,
+      "Concurrency": 24175
+    },
+    {
+      "Time": "9:52:00",
+      "Signups": 2.3,
+      "Concurrency": 29958
+    },
+    {
+      "Time": "9:52:15",
+      "Signups": 2.9,
+      "Concurrency": 35517
+    },
+    {
+      "Time": "9:52:30",
+      "Signups": 2.9,
+      "Concurrency": 42422
+    },
+    {
+      "Time": "9:52:45",
+      "Signups": 3.6,
+      "Concurrency": 48941
+    },
+    {
+      "Time": "9:53:00",
+      "Signups": 3.6,
+      "Concurrency": 56946
+    },
+    {
+      "Time": "9:53:15",
+      "Signups": 4.73,
+      "Concurrency": 64444
+    },
+    {
+      "Time": "9:53:30",
+      "Signups": 4.73,
+      "Concurrency": 73487
+    },
+    {
+      "Time": "9:53:45",
+      "Signups": 5.83,
+      "Concurrency": 82158
+    },
+    {
+      "Time": "9:54:00",
+      "Signups": 5.83,
+      "Concurrency": 92785
+    },
+    {
+      "Time": "9:54:15",
+      "Signups": 5.2,
+      "Concurrency": 101880
+    },
+    {
+      "Time": "9:54:30",
+      "Signups": 5.2,
+      "Concurrency": 112262
+    },
+    {
+      "Time": "9:54:45",
+      "Signups": 4.4,
+      "Concurrency": 121418
+    },
+    {
+      "Time": "9:55:00",
+      "Signups": 4.4,
+      "Concurrency": 131952
+    },
+    {
+      "Time": "9:55:15",
+      "Signups": 5.03,
+      "Concurrency": 141201
+    },
+    {
+      "Time": "9:55:30",
+      "Signups": 5.03,
+      "Concurrency": 152015
+    },
+    {
+      "Time": "9:55:45",
+      "Signups": 4.6,
+      "Concurrency": 161441
+    },
+    {
+      "Time": "9:56:00",
+      "Signups": 4.6,
+      "Concurrency": 172373
+    },
+    {
+      "Time": "9:56:15",
+      "Signups": 5,
+      "Concurrency": 181900
+    },
+    {
+      "Time": "9:56:30",
+      "Signups": 5,
+      "Concurrency": 192985
+    },
+    {
+      "Time": "9:56:45",
+      "Signups": 5.7,
+      "Concurrency": 202721
+    },
+    {
+      "Time": "9:57:00",
+      "Signups": 5.7,
+      "Concurrency": 214182
+    },
+    {
+      "Time": "9:57:15",
+      "Signups": 5.53,
+      "Concurrency": 224929
+    },
+    {
+      "Time": "9:57:30",
+      "Signups": 5.53,
+      "Concurrency": 237204
+    },
+    {
+      "Time": "9:57:45",
+      "Signups": 4.43,
+      "Concurrency": 247023
+    },
+    {
+      "Time": "9:58:00",
+      "Signups": 4.43,
+      "Concurrency": 258313
+    },
+    {
+      "Time": "9:58:15",
+      "Signups": 5.1,
+      "Concurrency": 268166
+    },
+    {
+      "Time": "9:58:30",
+      "Signups": 5.1,
+      "Concurrency": 279458
+    },
+    {
+      "Time": "9:58:45",
+      "Signups": 4.57,
+      "Concurrency": 289288
+    },
+    {
+      "Time": "9:59:00",
+      "Signups": 4.57,
+      "Concurrency": 300686
+    },
+    {
+      "Time": "9:59:15",
+      "Signups": 5.3,
+      "Concurrency": 310518
+    },
+    {
+      "Time": "9:59:30",
+      "Signups": 5.3,
+      "Concurrency": 321867
+    },
+    {
+      "Time": "9:59:45",
+      "Signups": 4.87,
+      "Concurrency": 331433
+    },
+    {
+      "Time": "10:00:00",
+      "Signups": 4.87,
+      "Concurrency": 342130
+    },
+    {
+      "Time": "10:00:15",
+      "Signups": 6.6,
+      "Concurrency": 351077
+    },
+    {
+      "Time": "10:00:30",
+      "Signups": 6.6,
+      "Concurrency": 361165
+    },
+    {
+      "Time": "10:00:45",
+      "Signups": 4.47,
+      "Concurrency": 369577
+    },
+    {
+      "Time": "10:01:00",
+      "Signups": 4.47,
+      "Concurrency": 378828
+    },
+    {
+      "Time": "10:01:15",
+      "Signups": 5.37,
+      "Concurrency": 386568
+    },
+    {
+      "Time": "10:01:30",
+      "Signups": 5.37,
+      "Concurrency": 395308
+    },
+    {
+      "Time": "10:01:45",
+      "Signups": 4.6,
+      "Concurrency": 402399
+    },
+    {
+      "Time": "10:02:00",
+      "Signups": 4.6,
+      "Concurrency": 409978
+    },
+    {
+      "Time": "10:02:15",
+      "Signups": 5.23,
+      "Concurrency": 415955
+    },
+    {
+      "Time": "10:02:30",
+      "Signups": 5.23,
+      "Concurrency": 422454
+    },
+    {
+      "Time": "10:02:45",
+      "Signups": 4.43,
+      "Concurrency": 427428
+    },
+    {
+      "Time": "10:03:00",
+      "Signups": 4.43,
+      "Concurrency": 432660
+    },
+    {
+      "Time": "10:03:15",
+      "Signups": 6.47,
+      "Concurrency": 436645
+    },
+    {
+      "Time": "10:03:30",
+      "Signups": 6.47,
+      "Concurrency": 440762
+    },
+    {
+      "Time": "10:03:45",
+      "Signups": 5,
+      "Concurrency": 443681
+    },
+    {
+      "Time": "10:04:00",
+      "Signups": 5,
+      "Concurrency": 446515
+    },
+    {
+      "Time": "10:04:15",
+      "Signups": 5.37,
+      "Concurrency": 448633
+    },
+    {
+      "Time": "10:04:30",
+      "Signups": 5.37,
+      "Concurrency": 451023
+    },
+    {
+      "Time": "10:04:45",
+      "Signups": 4.53,
+      "Concurrency": 452884
+    },
+    {
+      "Time": "10:05:00",
+      "Signups": 4.53,
+      "Concurrency": 454787
+    },
+    {
+      "Time": "10:05:15",
+      "Signups": 5.3,
+      "Concurrency": 456238
+    },
+    {
+      "Time": "10:05:30",
+      "Signups": 5.3,
+      "Concurrency": 457571
+    },
+    {
+      "Time": "10:05:45",
+      "Signups": 4.43,
+      "Concurrency": 458355
+    },
+    {
+      "Time": "10:06:00",
+      "Signups": 4.43,
+      "Concurrency": 459038
+    },
+    {
+      "Time": "10:06:15",
+      "Signups": 4.97,
+      "Concurrency": 459695
+    },
+    {
+      "Time": "10:06:30",
+      "Signups": 4.97,
+      "Concurrency": 460065
+    },
+    {
+      "Time": "10:06:45",
+      "Signups": 5.97,
+      "Concurrency": 460351
+    },
+    {
+      "Time": "10:07:00",
+      "Signups": 5.97,
+      "Concurrency": 460484
+    },
+    {
+      "Time": "10:07:15",
+      "Signups": 18.1,
+      "Concurrency": 460009
+    },
+    {
+      "Time": "10:07:30",
+      "Signups": 18.1,
+      "Concurrency": 459752
+    },
+    {
+      "Time": "10:07:45",
+      "Signups": 30.5,
+      "Concurrency": 459974
+    },
+    {
+      "Time": "10:08:00",
+      "Signups": 30.5,
+      "Concurrency": 459935
+    },
+    {
+      "Time": "10:08:15",
+      "Signups": 42.8,
+      "Concurrency": 459668
+    },
+    {
+      "Time": "10:08:30",
+      "Signups": 42.8,
+      "Concurrency": 459789
+    },
+    {
+      "Time": "10:08:45",
+      "Signups": 50.9,
+      "Concurrency": 460690
+    },
+    {
+      "Time": "10:09:00",
+      "Signups": 50.9,
+      "Concurrency": 462470
+    },
+    {
+      "Time": "10:09:15",
+      "Signups": 51.3,
+      "Concurrency": 464340
+    },
+    {
+      "Time": "10:09:30",
+      "Signups": 51.3,
+      "Concurrency": 467250
+    },
+    {
+      "Time": "10:09:45",
+      "Signups": 51.5,
+      "Concurrency": 470443
+    },
+    {
+      "Time": "10:10:00",
+      "Signups": 51.5,
+      "Concurrency": 475940
+    },
+    {
+      "Time": "10:10:15",
+      "Signups": 51.1,
+      "Concurrency": 486194
+    },
+    {
+      "Time": "10:10:30",
+      "Signups": 51.1,
+      "Concurrency": 504862
+    },
+    {
+      "Time": "10:10:45",
+      "Signups": 51,
+      "Concurrency": 528058
+    },
+    {
+      "Time": "10:11:00",
+      "Signups": 51,
+      "Concurrency": 561384
+    },
+    {
+      "Time": "10:11:15",
+      "Signups": 51.9,
+      "Concurrency": 597797
+    },
+    {
+      "Time": "10:11:30",
+      "Signups": 51.9,
+      "Concurrency": 646466
+    },
+    {
+      "Time": "10:11:45",
+      "Signups": 51.1,
+      "Concurrency": 693584
+    },
+    {
+      "Time": "10:12:00",
+      "Signups": 51.1,
+      "Concurrency": 754290
+    },
+    {
+      "Time": "10:12:15",
+      "Signups": 51.3,
+      "Concurrency": 813663
+    },
+    {
+      "Time": "10:12:30",
+      "Signups": 51.3,
+      "Concurrency": 888695
+    },
+    {
+      "Time": "10:12:45",
+      "Signups": 51.2,
+      "Concurrency": 960132
+    },
+    {
+      "Time": "10:13:00",
+      "Signups": 51.2,
+      "Concurrency": 1046522
+    },
+    {
+      "Time": "10:13:15",
+      "Signups": 51.4,
+      "Concurrency": 1123551
+    },
+    {
+      "Time": "10:13:30",
+      "Signups": 51.4,
+      "Concurrency": 1212301
+    },
+    {
+      "Time": "10:13:45",
+      "Signups": 51.7,
+      "Concurrency": 1289038
+    },
+    {
+      "Time": "10:14:00",
+      "Signups": 51.7,
+      "Concurrency": 1377724
+    },
+    {
+      "Time": "10:14:15",
+      "Signups": 51.2,
+      "Concurrency": 1453985
+    },
+    {
+      "Time": "10:14:30",
+      "Signups": 51.2,
+      "Concurrency": 1542364
+    },
+    {
+      "Time": "10:14:45",
+      "Signups": 52,
+      "Concurrency": 1619095
+    },
+    {
+      "Time": "10:15:00",
+      "Signups": 52,
+      "Concurrency": 1707604
+    },
+    {
+      "Time": "10:15:15",
+      "Signups": 52.1,
+      "Concurrency": 1784884
+    },
+    {
+      "Time": "10:15:30",
+      "Signups": 52.1,
+      "Concurrency": 1873508
+    },
+    {
+      "Time": "10:15:45",
+      "Signups": 50.6,
+      "Concurrency": 1950361
+    },
+    {
+      "Time": "10:16:00",
+      "Signups": 50.6,
+      "Concurrency": 2039410
+    },
+    {
+      "Time": "10:16:15",
+      "Signups": 51.4,
+      "Concurrency": 2116157
+    },
+    {
+      "Time": "10:16:30",
+      "Signups": 51.4,
+      "Concurrency": 2204907
+    },
+    {
+      "Time": "10:16:45",
+      "Signups": 51.7,
+      "Concurrency": 2282306
+    },
+    {
+      "Time": "10:17:00",
+      "Signups": 51.7,
+      "Concurrency": 2371666
+    },
+    {
+      "Time": "10:17:15",
+      "Signups": 50.9,
+      "Concurrency": 2448765
+    },
+    {
+      "Time": "10:17:30",
+      "Signups": 50.9,
+      "Concurrency": 2537159
+    },
+    {
+      "Time": "10:17:45",
+      "Signups": 41.6,
+      "Concurrency": 2613803
+    },
+    {
+      "Time": "10:18:00",
+      "Signups": 41.6,
+      "Concurrency": 2702472
+    },
+    {
+      "Time": "10:18:15",
+      "Signups": 23.3,
+      "Concurrency": 2778947
+    },
+    {
+      "Time": "10:18:30",
+      "Signups": 23.3,
+      "Concurrency": 2868317
+    },
+    {
+      "Time": "10:18:45",
+      "Signups": 12.1,
+      "Concurrency": 2944382
+    },
+    {
+      "Time": "10:19:00",
+      "Signups": 12.1,
+      "Concurrency": 3032597
+    },
+    {
+      "Time": "10:19:15",
+      "Signups": 32.7,
+      "Concurrency": 3108029
+    },
+    {
+      "Time": "10:19:30",
+      "Signups": 32.7,
+      "Concurrency": 3195990
+    },
+    {
+      "Time": "10:19:45",
+      "Signups": 51,
+      "Concurrency": 3271035
+    },
+    {
+      "Time": "10:20:00",
+      "Signups": 51,
+      "Concurrency": 3356836
+    },
+    {
+      "Time": "10:20:15",
+      "Signups": 50.8,
+      "Concurrency": 3427171
+    },
+    {
+      "Time": "10:20:30",
+      "Signups": 50.8,
+      "Concurrency": 3505808
+    },
+    {
+      "Time": "10:20:45",
+      "Signups": 41.9,
+      "Concurrency": 3569239
+    },
+    {
+      "Time": "10:21:00",
+      "Signups": 41.9,
+      "Concurrency": 3638798
+    },
+    {
+      "Time": "10:21:15",
+      "Signups": 23.5,
+      "Concurrency": 3693134
+    },
+    {
+      "Time": "10:21:30",
+      "Signups": 23.5,
+      "Concurrency": 3751969
+    },
+    {
+      "Time": "10:21:45",
+      "Signups": 12.2,
+      "Concurrency": 3799604
+    },
+    {
+      "Time": "10:22:00",
+      "Signups": 12.2,
+      "Concurrency": 3851293
+    },
+    {
+      "Time": "10:22:15",
+      "Signups": 32.1,
+      "Concurrency": 3888791
+    },
+    {
+      "Time": "10:22:30",
+      "Signups": 32.1,
+      "Concurrency": 3926915
+    },
+    {
+      "Time": "10:22:45",
+      "Signups": 50,
+      "Concurrency": 3951742
+    },
+    {
+      "Time": "10:23:00",
+      "Signups": 50,
+      "Concurrency": 3976816
+    },
+    {
+      "Time": "10:23:15",
+      "Signups": 50.9,
+      "Concurrency": 3993583
+    },
+    {
+      "Time": "10:23:30",
+      "Signups": 50.9,
+      "Concurrency": 4010655
+    },
+    {
+      "Time": "10:23:45",
+      "Signups": 42,
+      "Concurrency": 4023093
+    },
+    {
+      "Time": "10:24:00",
+      "Signups": 42,
+      "Concurrency": 4035262
+    },
+    {
+      "Time": "10:24:15",
+      "Signups": 23.6,
+      "Concurrency": 4042675
+    },
+    {
+      "Time": "10:24:30",
+      "Signups": 23.6,
+      "Concurrency": 4049205
+    },
+    {
+      "Time": "10:24:45",
+      "Signups": 12.2,
+      "Concurrency": 4051566
+    },
+    {
+      "Time": "10:25:00",
+      "Signups": 12.2,
+      "Concurrency": 4053458
+    },
+    {
+      "Time": "10:25:15",
+      "Signups": 32.1,
+      "Concurrency": 4053380
+    },
+    {
+      "Time": "10:25:30",
+      "Signups": 32.1,
+      "Concurrency": 4053956
+    },
+    {
+      "Time": "10:25:45",
+      "Signups": 50.1,
+      "Concurrency": 4053954
+    },
+    {
+      "Time": "10:26:00",
+      "Signups": 50.1,
+      "Concurrency": 4053790
+    },
+    {
+      "Time": "10:26:15",
+      "Signups": 51,
+      "Concurrency": 4053725
+    },
+    {
+      "Time": "10:26:30",
+      "Signups": 51,
+      "Concurrency": 4054202
+    },
+    {
+      "Time": "10:26:45",
+      "Signups": 41.9,
+      "Concurrency": 4054326
+    },
+    {
+      "Time": "10:27:00",
+      "Signups": 41.9,
+      "Concurrency": 4054980
+    },
+    {
+      "Time": "10:27:15",
+      "Signups": 24,
+      "Concurrency": 4053913
+    },
+    {
+      "Time": "10:27:30",
+      "Signups": 24,
+      "Concurrency": 4053847
+    },
+    {
+      "Time": "10:27:45",
+      "Signups": 11.9,
+      "Concurrency": 4053643
+    },
+    {
+      "Time": "10:28:00",
+      "Signups": 11.9,
+      "Concurrency": 4054116
+    },
+    {
+      "Time": "10:28:15",
+      "Signups": 32.5,
+      "Concurrency": 4054066
+    },
+    {
+      "Time": "10:28:30",
+      "Signups": 32.5,
+      "Concurrency": 4054152
+    },
+    {
+      "Time": "10:28:45",
+      "Signups": 50,
+      "Concurrency": 4054037
+    },
+    {
+      "Time": "10:29:00",
+      "Signups": 50,
+      "Concurrency": 4053957
+    },
+    {
+      "Time": "10:29:15",
+      "Signups": 50.9,
+      "Concurrency": 4053707
+    },
+    {
+      "Time": "10:29:30",
+      "Signups": 50.9,
+      "Concurrency": 4053164
+    },
+    {
+      "Time": "10:29:45",
+      "Signups": 41.9,
+      "Concurrency": 4053970
+    },
+    {
+      "Time": "10:30:00",
+      "Signups": 41.9,
+      "Concurrency": 4054116
+    },
+    {
+      "Time": "10:30:15",
+      "Signups": 23.8,
+      "Concurrency": 4053311
+    },
+    {
+      "Time": "10:30:30",
+      "Signups": 23.8,
+      "Concurrency": 4052080
+    },
+    {
+      "Time": "10:30:45",
+      "Signups": 12.1,
+      "Concurrency": 4051325
+    },
+    {
+      "Time": "10:31:00",
+      "Signups": 12.1,
+      "Concurrency": 4049419
+    },
+    {
+      "Time": "10:31:15",
+      "Signups": 32.7,
+      "Concurrency": 4048125
+    },
+    {
+      "Time": "10:31:30",
+      "Signups": 32.7,
+      "Concurrency": 4045055
+    },
+    {
+      "Time": "10:31:45",
+      "Signups": 50.5,
+      "Concurrency": 4042538
+    },
+    {
+      "Time": "10:32:00",
+      "Signups": 50.5,
+      "Concurrency": 4036804
+    },
+    {
+      "Time": "10:32:15",
+      "Signups": 50.8,
+      "Concurrency": 4029558
+    },
+    {
+      "Time": "10:32:30",
+      "Signups": 50.8,
+      "Concurrency": 4015726
+    },
+    {
+      "Time": "10:32:45",
+      "Signups": 42.7,
+      "Concurrency": 3999128
+    },
+    {
+      "Time": "10:33:00",
+      "Signups": 42.7,
+      "Concurrency": 3974897
+    },
+    {
+      "Time": "10:33:15",
+      "Signups": 24.3,
+      "Concurrency": 3949886
+    },
+    {
+      "Time": "10:33:30",
+      "Signups": 24.3,
+      "Concurrency": 3915347
+    },
+    {
+      "Time": "10:33:45",
+      "Signups": 9.03,
+      "Concurrency": 3880717
+    },
+    {
+      "Time": "10:34:00",
+      "Signups": 9.03,
+      "Concurrency": 3835606
+    },
+    {
+      "Time": "10:34:15",
+      "Signups": 5.13,
+      "Concurrency": 3794804
+    },
+    {
+      "Time": "10:34:30",
+      "Signups": 5.13,
+      "Concurrency": 3752490
+    },
+    {
+      "Time": "10:34:45",
+      "Signups": 4.7,
+      "Concurrency": 3728638
+    },
+    {
+      "Time": "10:35:00",
+      "Signups": 4.7,
+      "Concurrency": 3705103
+    },
+    {
+      "Time": "10:35:15",
+      "Signups": 5.2,
+      "Concurrency": 3680507
+    },
+    {
+      "Time": "10:35:30",
+      "Signups": 5.2,
+      "Concurrency": 3649098
+    },
+    {
+      "Time": "10:35:45",
+      "Signups": 4.6,
+      "Concurrency": 3617144
+    },
+    {
+      "Time": "10:36:00",
+      "Signups": 4.6,
+      "Concurrency": 3576675
+    },
+    {
+      "Time": "10:36:15",
+      "Signups": 5.4,
+      "Concurrency": 3540439
+    },
+    {
+      "Time": "10:36:30",
+      "Signups": 5.4,
+      "Concurrency": 3497237
+    },
+    {
+      "Time": "10:36:45",
+      "Signups": 6,
+      "Concurrency": 3453240
+    },
+    {
+      "Time": "10:37:00",
+      "Signups": 6,
+      "Concurrency": 3393822
+    },
+    {
+      "Time": "10:37:15",
+      "Signups": 5.17,
+      "Concurrency": 3331812
+    },
+    {
+      "Time": "10:37:30",
+      "Signups": 5.17,
+      "Concurrency": 3251124
+    },
+    {
+      "Time": "10:37:45",
+      "Signups": 4.67,
+      "Concurrency": 3176921
+    },
+    {
+      "Time": "10:38:00",
+      "Signups": 4.67,
+      "Concurrency": 3089489
+    },
+    {
+      "Time": "10:38:15",
+      "Signups": 5.27,
+      "Concurrency": 3012947
+    },
+    {
+      "Time": "10:38:30",
+      "Signups": 5.27,
+      "Concurrency": 2923471
+    },
+    {
+      "Time": "10:38:45",
+      "Signups": 4.5,
+      "Concurrency": 2846176
+    },
+    {
+      "Time": "10:39:00",
+      "Signups": 4.5,
+      "Concurrency": 2756421
+    },
+    {
+      "Time": "10:39:15",
+      "Signups": 5.47,
+      "Concurrency": 2677634
+    },
+    {
+      "Time": "10:39:30",
+      "Signups": 5.47,
+      "Concurrency": 2586525
+    },
+    {
+      "Time": "10:39:45",
+      "Signups": 5.87,
+      "Concurrency": 2506670
+    },
+    {
+      "Time": "10:40:00",
+      "Signups": 5.87,
+      "Concurrency": 2414009
+    },
+    {
+      "Time": "10:40:15",
+      "Signups": 5.23,
+      "Concurrency": 2333828
+    },
+    {
+      "Time": "10:40:30",
+      "Signups": 5.23,
+      "Concurrency": 2240359
+    },
+    {
+      "Time": "10:40:45",
+      "Signups": 4.43,
+      "Concurrency": 2157864
+    },
+    {
+      "Time": "10:41:00",
+      "Signups": 4.43,
+      "Concurrency": 2063235
+    },
+    {
+      "Time": "10:41:15",
+      "Signups": 5.23,
+      "Concurrency": 1981891
+    },
+    {
+      "Time": "10:41:30",
+      "Signups": 5.23,
+      "Concurrency": 1887888
+    },
+    {
+      "Time": "10:41:45",
+      "Signups": 4.4,
+      "Concurrency": 1806824
+    },
+    {
+      "Time": "10:42:00",
+      "Signups": 4.4,
+      "Concurrency": 1714307
+    },
+    {
+      "Time": "10:42:15",
+      "Signups": 5.53,
+      "Concurrency": 1636470
+    },
+    {
+      "Time": "10:42:30",
+      "Signups": 5.53,
+      "Concurrency": 1549225
+    },
+    {
+      "Time": "10:42:45",
+      "Signups": 6.07,
+      "Concurrency": 1476141
+    },
+    {
+      "Time": "10:43:00",
+      "Signups": 6.07,
+      "Concurrency": 1394552
+    },
+    {
+      "Time": "10:43:15",
+      "Signups": 5.23,
+      "Concurrency": 1327104
+    },
+    {
+      "Time": "10:43:30",
+      "Signups": 5.23,
+      "Concurrency": 1252293
+    },
+    {
+      "Time": "10:43:45",
+      "Signups": 4.7,
+      "Concurrency": 1190673
+    },
+    {
+      "Time": "10:44:00",
+      "Signups": 4.7,
+      "Concurrency": 1123700
+    },
+    {
+      "Time": "10:44:15",
+      "Signups": 5.33,
+      "Concurrency": 1069354
+    },
+    {
+      "Time": "10:44:30",
+      "Signups": 5.33,
+      "Concurrency": 1011444
+    },
+    {
+      "Time": "10:44:45",
+      "Signups": 4.5,
+      "Concurrency": 965654
+    },
+    {
+      "Time": "10:45:00",
+      "Signups": 4.5,
+      "Concurrency": 917472
+    },
+    {
+      "Time": "10:45:15",
+      "Signups": 5.53,
+      "Concurrency": 880222
+    },
+    {
+      "Time": "10:45:30",
+      "Signups": 5.53,
+      "Concurrency": 842202
+    },
+    {
+      "Time": "10:45:45",
+      "Signups": 6,
+      "Concurrency": 813790
+    },
+    {
+      "Time": "10:46:00",
+      "Signups": 6,
+      "Concurrency": 785645
+    },
+    {
+      "Time": "10:46:15",
+      "Signups": 5.2,
+      "Concurrency": 763927
+    },
+    {
+      "Time": "10:46:30",
+      "Signups": 5.2,
+      "Concurrency": 741377
+    },
+    {
+      "Time": "10:46:45",
+      "Signups": 4.4,
+      "Concurrency": 723666
+    },
+    {
+      "Time": "10:47:00",
+      "Signups": 4.4,
+      "Concurrency": 705902
+    },
+    {
+      "Time": "10:47:15",
+      "Signups": 5.33,
+      "Concurrency": 692693
+    },
+    {
+      "Time": "10:47:30",
+      "Signups": 5.33,
+      "Concurrency": 679855
+    },
+    {
+      "Time": "10:47:45",
+      "Signups": 4.63,
+      "Concurrency": 670649
+    },
+    {
+      "Time": "10:48:00",
+      "Signups": 4.63,
+      "Concurrency": 662423
+    },
+    {
+      "Time": "10:48:15",
+      "Signups": 5,
+      "Concurrency": 655652
+    },
+    {
+      "Time": "10:48:30",
+      "Signups": 5,
+      "Concurrency": 648468
+    },
+    {
+      "Time": "10:48:45",
+      "Signups": 2.17,
+      "Concurrency": 642632
+    },
+    {
+      "Time": "10:49:00",
+      "Signups": 2.17,
+      "Concurrency": 636713
+    },
+    {
+      "Time": "10:49:15",
+      "Signups": 2.27,
+      "Concurrency": 633207
+    },
+    {
+      "Time": "10:49:30",
+      "Signups": 2.27,
+      "Concurrency": 632037
+    },
+    {
+      "Time": "10:49:45",
+      "Signups": 0.0333,
+      "Concurrency": 632017
+    },
+    {
+      "Time": "10:50:00",
+      "Signups": 0.0333,
+      "Concurrency": 632017
+    },
+    {
+      "Time": "10:50:15",
+      "Signups": 0,
+      "Concurrency": 632017
+    },
+    {
+      "Time": "10:50:30",
+      "Signups": 0,
+      "Concurrency": 632017
+    },
+    {
+      "Time": "10:50:45",
+      "Signups": 0,
+      "Concurrency": 608753
+    },
+    {
+      "Time": "10:51:00",
+      "Signups": 0,
+      "Concurrency": 311818
+    },
+    {
+      "Time": "10:51:15",
+      "Signups": 0,
+      "Concurrency": 47825
+    },
+    {
+      "Time": "10:51:30",
+      "Signups": 0,
+      "Concurrency": 0
+    }
+   ]
+}
