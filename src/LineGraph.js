@@ -14,7 +14,7 @@ const LineGraph = () => {
 
   const renderChart = useCallback(() => {
     if (data.length > 0) {
-      const times = data.map(entry => entry.Time);
+      const times = data.map(entry => entry.Time); // Assuming entry.Time is in numerical format
       const signups = data.map(entry => entry.Signups);
       const concurrency = data.map(entry => entry.Concurrency);
 
@@ -22,7 +22,7 @@ const LineGraph = () => {
       new Chart(ctx, {
         type: 'line',
         data: {
-          labels: times,
+          labels: times.map(time => formatTime(time)), // Convert numerical time to formatted time
           datasets: [
             {
               label: 'Signups',
@@ -49,6 +49,12 @@ const LineGraph = () => {
                 display: true,
                 text: 'Time (min)'
               },
+              ticks: {
+                autoSkip: true,
+                maxTicksLimit: 10,
+                maxRotation: 0, // Rotate the labels by 45 degrees
+                minRotation: 0 // Ensure the labels are rotated by 45 degrees
+              }
             },
             y: {
               title: {
@@ -84,6 +90,21 @@ const LineGraph = () => {
   useEffect(() => {
     renderChart();
   }, [renderChart]);
+
+ // Function to format time values to time format
+const formatTime = (time) => {
+  console.log("Original time:", time);
+  
+  // Extracting hours, minutes, and seconds from the time string
+  const [hours, minutes, seconds] = time.split(":");
+  
+  console.log("Hours:", hours);
+  console.log("Minutes:", minutes);
+  console.log("Seconds:", seconds);
+  
+  // Returning hours, minutes, and seconds
+  return `${hours}:${minutes}:${seconds}`;
+};
 
   return (
     <div>
