@@ -28,59 +28,54 @@ const LineGraph = () => {
               label: 'Signups',
               data: signups,
               borderColor: 'rgba(75, 192, 192, 1)',
-              backgroundColor: 'rgba(75, 192, 192, 0.2)',
-              yAxisID : 'y1',
+              borderWidth: 1.5,
+              backgroundColor: 'rgba(75, 192, 192, 0.1)',
+              yAxisID: 'y1',
             },
             {
               label: 'Concurrency',
               data: concurrency,
               borderColor: 'rgba(255, 99, 132, 1)',
-              backgroundColor: 'rgba(255, 99, 132, 0.2)',
-              yAxisID : 'y',
+              borderWidth: 1.5,
+              backgroundColor: 'rgba(255, 99, 132, 0.1)',
+              yAxisID: 'y',
             },
           ],
         },
         options: {
           scales: {
             x: {
-                title: {
-                    display: true,
-                    text: 'Time (min)'
-                },
-                // grid: {
-                //     display: false // Remove vertical grid lines
-                // }
+              title: {
+                display: true,
+                text: 'Time (min)'
+              },
             },
             y: {
-                title: {
-                    display: true,
-                    text: 'No of users'
-                },
-                // border:{
-                //     display:false
-                //   },
-                
-                beginAtZero: true,
-                position: 'left',
+              title: {
+                display: true,
+                text: 'No of users'
+              },
+              beginAtZero: true,
+              position: 'left',
             },
             y1: {
-                title: {
-                    display: true,
-                    text: 'No of users'
-                },
-                grid:{
-                    drawOnChartArea: false,
-                },
-                // border:{
-                //     display:false
-                //   },
-                
-                beginAtZero: true,
-                position: 'right',
-                
+              title: {
+                display: true,
+                text: 'No of users'
+              },
+              grid: {
+                drawOnChartArea: false,
+              },
+              beginAtZero: true,
+              position: 'right',
             },
-            
-        },
+          },
+          plugins: {
+            tooltip: {
+              mode: 'index',
+              intersect: false,
+            },
+          },
         },
       });
     }
