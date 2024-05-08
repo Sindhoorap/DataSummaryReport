@@ -1,12 +1,25 @@
-import React from 'react';
-import LineGraph from './LineGraph'; // Assuming LineGraph.js is in the same directory
+import React, {  useState, useEffect } from 'react';
+//import Chart from 'chart.js/auto';
+import DataDisplay from './DataDisplay';
+function App() {
+    const [testDetails, setTestDetails] = useState([]);
 
-const App = () => {
-  return (
-    <div>
-      <LineGraph />
-    </div>
-  );
-};
+    useEffect(() => {
+        fetch('/data.json')
+            .then(response => response.json())
+            .then(data => {
+                setTestDetails(data.testDetails);
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    }, []);
+
+    return (
+        <div>
+            <DataDisplay testDetails={testDetails} /> {/* Pass testDetails to DataDisplay component */}
+           
+        </div>
+    );
+  
+}
 
 export default App;
