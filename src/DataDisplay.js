@@ -27,19 +27,19 @@ function DataDisplay({ testDetails }) {
             </select>
             <br />
             {selectedTestDetail && (
-                <div>
+                <div className="selected-test-details">
                     <table>
                         <thead>
                             <tr>
                                 {Object.keys(selectedTestDetail).map(key => (
-                                    <th key={key} style={{ fontWeight: 'bold', backgroundColor: 'lightgrey', padding: '10px' }}>{key}</th>
+                                    <th>{key}</th>
                                 ))}
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 {Object.keys(selectedTestDetail).map(key => (
-                                    <td key={key} style={{ padding: '10px' }}>{selectedTestDetail[key]}</td>
+                                    <td>{selectedTestDetail[key]}</td>
                                 ))}
                             </tr>
                         </tbody>

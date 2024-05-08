@@ -1,0 +1,24 @@
+.selected-test-details {
+  background-color: #E7E7E7;
+  border-radius: 11.67px;
+  padding: 10px;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+.selected-test-details table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.selected-test-details th,
+.selected-test-details td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.selected-test-details th {
+  background-color: lightgrey;
+  font-weight: bold;
+}
+

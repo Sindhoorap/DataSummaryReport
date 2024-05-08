@@ -1,6 +1,7 @@
 import React, {  useState, useEffect } from 'react';
 //import Chart from 'chart.js/auto';
 import DataDisplay from './DataDisplay';
+import './styles.css';
 function App() {
     const [testDetails, setTestDetails] = useState([]);
 
