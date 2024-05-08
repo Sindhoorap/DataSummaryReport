@@ -19,8 +19,9 @@ function DataDisplay({ testDetails }) {
 
     return (
         <div>
-            <h1>Test Details</h1>
-            <select value={selectedTestId} onChange={handleTestIdChange}>
+           <h1 className="test-details-title">Performance Test Results - NBCU US</h1>
+           <hr className="title-line" />
+            <select value={selectedTestId} onChange={handleTestIdChange} className="my-dropdown">
                 <option value="">Select TestId</option>
                 {filteredTestDetails.map(detail => (
                     <option key={detail.TestId} value={detail.TestId}>{detail.TestId}</option>
@@ -30,28 +31,54 @@ function DataDisplay({ testDetails }) {
             {selectedTestDetail && (
                 <div className="selected-test-details">
                     <div className="test-details-box">
-                        <p><strong>Test ID:</strong> {selectedTestDetail.TestId}</p>
+                        <p className="test-id">
+                            <strong>Test ID</strong> 
+                        </p>
+                        <p className="selected-test-id">
+                            {selectedTestDetail.TestId}
+                        </p>
                     </div>
                     <div className="test-details-box">
-                        <p><strong>Run Date:</strong> {selectedTestDetail.RunDate}</p>
+                        <p className="test-id">
+                            <strong>Run Date</strong>
+                        </p>
+                        <p className="selected-test-id"> {selectedTestDetail.RunDate}</p>
                     </div>
                     <div className="test-details-box">
-                        <p><strong>Description:</strong> {selectedTestDetail.Description}</p>
+                        <p className="test-id">
+                            <strong>Description</strong> 
+                        </p>
+                        <p className="selected-test-id">{selectedTestDetail.Description}</p>
                     </div>
                     <div className="test-details-box">
-                        <p><strong>Test:</strong> {selectedTestDetail.Test}</p>
+                        <p className="test-id">
+                            <strong>Test</strong> 
+                        </p>
+                        <p className="selected-test-id">{selectedTestDetail.Test}</p>
                     </div>
                     <div className="test-details-box">
-                        <p><strong>Peak Number:</strong> {selectedTestDetail.PeakNumber}</p>
+                        <p className="test-id">
+                            <strong>Peak Number</strong>
+                        </p>
+                        <p className="selected-test-id"> {selectedTestDetail.PeakNumber}</p>
                     </div>
                     <div className="test-details-box">
-                        <p><strong>Peak Duration:</strong> {selectedTestDetail.PeakDuration}</p>
+                        <p className="test-id">
+                            <strong>Peak Duration</strong> 
+                        </p>
+                        <p className="selected-test-id">{selectedTestDetail.PeakDuration}</p>
                     </div>
                     <div className="test-details-box">
-                        <p><strong>Valid Test Run:</strong> {selectedTestDetail.ValidTestRun}</p>
+                        <p className="test-id">
+                            <strong>Valid Test Run</strong> 
+                        </p>
+                        <p className="selected-test-id">{selectedTestDetail.ValidTestRun}</p>
                     </div>
                     <div className="test-details-box">
-                        <p><strong>Status:</strong> {selectedTestDetail.Status}</p>
+                        <p className="test-id">
+                            <strong>Status</strong> 
+                        </p>
+                        <p className="selected-test-id">{selectedTestDetail.Status}</p>
                     </div>
                 </div>
             )}

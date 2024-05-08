@@ -9,7 +9,67 @@
 .test-details-box {
   background-color: #E7E7E7;
   width: 186px; /* Set a fixed width for each box */
+  height: 21px;
+  border-radius: 11.67px;
+  padding: 10px;
+  text-align: center; /* Center align text */
+}
+
+.test-details-title {
+  font-family: 'Inter', sans-serif; /* Set font family */
+  font-size: 20px; /* Set font size */
+  font-weight: bold; /* Set font weight */
+  line-height: 20px; /* Set line height */
+  text-align: center; /* Center align the text */
+}
+.title-line {
+  border: none;
+  height: 1px; /* Adjust the thickness of the line */
+  background-color: #cdcdcd; /* Fill color */
+}
+.my-dropdown {
+  border: none; /* Remove border */
+  font-family: 'Inter', sans-serif; /* Use Inter font */
+  font-weight: 600; /* Semi bold */
+  font-size: 12px; /* Adjust font size */
+  resize: horizontal; /* Enable horizontal resizing */
+  line-height: 14.6px; 
+}
+/* styles.css */
+.test-id-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600; /* Semi bold */
+  font-size: 10.21px;
+  line-height: 14.6px;
+}
+
+.selected-test-id {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600; /* Semi bold */
+  font-size: 17.5px;
+  line-height: 26.3px;
+}
+
+/* styles.css */
+.test-details-box {
+  background-color: #E7E7E7;
+  width: 186px; /* Set a fixed width for each box */
   height: 81px;
   border-radius: 11.67px;
   padding: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600; /* Semi bold */
+  font-size: 10.21px;
+  line-height: 14.6px;
+}
+
+.test-id,
+.selected-test-id {
+  margin: 0; /* Reset margin for paragraphs */
+}
+
+.selected-test-id {
+  font-size: 17.5px; /* Adjusted size for selected Test ID */
+  line-height: 26.3px; /* Adjusted line height for selected Test ID */
+  padding-top: 5px; /* Add padding to separate Test ID and selected Test ID */
 }
