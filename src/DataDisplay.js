@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './styles.css'; // Import the CSS file for styling
 import ChartComponent from './ChartComponent';
 
 function DataDisplay({ testDetails }) {
@@ -28,22 +29,30 @@ function DataDisplay({ testDetails }) {
             <br />
             {selectedTestDetail && (
                 <div className="selected-test-details">
-                    <table>
-                        <thead>
-                            <tr>
-                                {Object.keys(selectedTestDetail).map(key => (
-                                    <th>{key}</th>
-                                ))}
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                {Object.keys(selectedTestDetail).map(key => (
-                                    <td>{selectedTestDetail[key]}</td>
-                                ))}
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div className="test-details-box">
+                        <p><strong>Test ID:</strong> {selectedTestDetail.TestId}</p>
+                    </div>
+                    <div className="test-details-box">
+                        <p><strong>Run Date:</strong> {selectedTestDetail.RunDate}</p>
+                    </div>
+                    <div className="test-details-box">
+                        <p><strong>Description:</strong> {selectedTestDetail.Description}</p>
+                    </div>
+                    <div className="test-details-box">
+                        <p><strong>Test:</strong> {selectedTestDetail.Test}</p>
+                    </div>
+                    <div className="test-details-box">
+                        <p><strong>Peak Number:</strong> {selectedTestDetail.PeakNumber}</p>
+                    </div>
+                    <div className="test-details-box">
+                        <p><strong>Peak Duration:</strong> {selectedTestDetail.PeakDuration}</p>
+                    </div>
+                    <div className="test-details-box">
+                        <p><strong>Valid Test Run:</strong> {selectedTestDetail.ValidTestRun}</p>
+                    </div>
+                    <div className="test-details-box">
+                        <p><strong>Status:</strong> {selectedTestDetail.Status}</p>
+                    </div>
                 </div>
             )}
             {selectedTestDetail && <ChartComponent selectedTestDetail={selectedTestDetail} />}

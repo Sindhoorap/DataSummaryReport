@@ -1,24 +1,15 @@
+/* styles.css */
+
 .selected-test-details {
+  display: flex;
+  justify-content: space-between; /* Distribute space between boxes */
+  padding: 20px; /* Add padding to the container */
+}
+
+.test-details-box {
   background-color: #E7E7E7;
+  width: 186px; /* Set a fixed width for each box */
+  height: 81px;
   border-radius: 11.67px;
   padding: 10px;
-  margin-top: 20px; /* Adjust as needed */
 }
-
-.selected-test-details table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.selected-test-details th,
-.selected-test-details td {
-  padding: 8px;
-  border: 1px solid #ddd;
-  text-align: left;
-}
-
-.selected-test-details th {
-  background-color: lightgrey;
-  font-weight: bold;
-}
-
