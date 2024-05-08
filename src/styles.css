@@ -1,18 +1,9 @@
 /* styles.css */
-
 .selected-test-details {
   display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
   justify-content: space-between; /* Distribute space between boxes */
   padding: 20px; /* Add padding to the container */
-}
-
-.test-details-box {
-  background-color: #E7E7E7;
-  width: 186px; /* Set a fixed width for each box */
-  height: 21px;
-  border-radius: 11.67px;
-  padding: 10px;
-  text-align: center; /* Center align text */
 }
 
 .test-details-title {
@@ -21,12 +12,16 @@
   font-weight: bold; /* Set font weight */
   line-height: 20px; /* Set line height */
   text-align: center; /* Center align the text */
+  width: 100%; /* Make the title span the full width of the container */
 }
+
 .title-line {
   border: none;
   height: 1px; /* Adjust the thickness of the line */
   background-color: #cdcdcd; /* Fill color */
+  width: 100%; /* Make the line span the full width of the container */
 }
+
 .my-dropdown {
   border: none; /* Remove border */
   font-family: 'Inter', sans-serif; /* Use Inter font */
@@ -34,8 +29,9 @@
   font-size: 12px; /* Adjust font size */
   resize: horizontal; /* Enable horizontal resizing */
   line-height: 14.6px; 
+  
 }
-/* styles.css */
+
 .test-id-label {
   font-family: 'Inter', sans-serif;
   font-weight: 600; /* Semi bold */
@@ -49,12 +45,10 @@
   font-size: 17.5px;
   line-height: 26.3px;
 }
-
-/* styles.css */
 .test-details-box {
   background-color: #E7E7E7;
-  width: 186px; /* Set a fixed width for each box */
-  height: 81px;
+  width: 136px; /* Set a fixed width for each box *//* Set the width of each box to half of the container width minus padding */
+  height: 65px;
   border-radius: 11.67px;
   padding: 10px;
   font-family: 'Inter', sans-serif;
@@ -72,4 +66,17 @@
   font-size: 17.5px; /* Adjusted size for selected Test ID */
   line-height: 26.3px; /* Adjusted line height for selected Test ID */
   padding-top: 5px; /* Add padding to separate Test ID and selected Test ID */
+}
+
+/* Adjustments for app-container and frame */
+.app-container {
+  display: flex;
+  align-items: stretch; /* Stretch the children to match the height of the container */
+}
+
+.frame {
+  width: 200px; /* Set the width of the frame */
+  background-color: #D02323; /* Set the background color of the frame */
+  padding: 20px; /* Add padding to the frame */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }

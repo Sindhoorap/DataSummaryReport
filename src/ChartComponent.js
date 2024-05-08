@@ -133,7 +133,7 @@ const formatTime = (time) => {
       //textAlign: 'center', 
       //paddingTop: '20px' 
     }}>
-      <h3>Data For Summary Report</h3>
+     
       
       <canvas id="lineChart" width="800" height="400"></canvas>
     </div>

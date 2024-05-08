@@ -15,7 +15,8 @@ function App() {
     }, []);
 
     return (
-        <div>
+        <div className="app-container">
+            <div className="frame"></div>
             <DataDisplay testDetails={testDetails} /> {/* Pass testDetails to DataDisplay component */}
            
         </div>
