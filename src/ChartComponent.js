@@ -120,24 +120,23 @@ const formatTime = (time) => {
   return `${hours}:${minutes}:${seconds}`;
 };
 
-  return (
-    <div
-      style={{
-      // width: '717.71px',
-      // height: '233.33px',
-      // position: 'absolute',
-      // top: '248px',
-      // left: '201px',
-      // borderRadius: '11.67px',
-      //background: '#F7F9FB',
-      //textAlign: 'center', 
-      //paddingTop: '20px' 
-    }}>
-     
-      
-      <canvas id="lineChart" width="800" height="400"></canvas>
-    </div>
-  );
+return (
+  <div
+    style={{
+      width: '90%', /* Set the width to 90% of the container width */
+      height: '57vh', /* Set the height to 50% of the viewport height */
+      margin: 'auto', /* Center the component horizontally */
+      borderRadius: '1.2vw', /* Set border radius (1.2% of the viewport width) */
+      background: '#F7F9FB',
+      textAlign: 'center',
+      paddingTop: '2%', /* Add padding to the top (2% of the container height) */
+      boxSizing: 'border-box' /* Include padding and border in the element's total width and height */
+    }}
+  >
+    <canvas id="lineChart" width="800" height="400"></canvas>
+  </div>
+);
+
 };
 
 export default LineGraph;
