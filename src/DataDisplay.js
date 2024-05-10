@@ -75,6 +75,12 @@ function DataDisplay({ testDetails }) {
                         </p>
                         <p className="selected-test-id">{selectedTestDetail.Status}</p>
                     </div>
+                    <div className="test-details-box">
+                        <p className="test-id">
+                            <strong>Description</strong> 
+                        </p>
+                        <p className="selected-test-id">{selectedTestDetail.Description}</p>
+                    </div>
                 </div>
             )}
             {selectedTestDetail && <ChartComponent selectedTestDetail={selectedTestDetail} />}

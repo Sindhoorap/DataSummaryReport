@@ -36,6 +36,7 @@ const LineGraph = () => {
                 backgroundColor: 'rgba(75, 192, 192, 0.1)',
                 yAxisID: 'y1',
                 pointRadius: 0, 
+                fontFamily: 'Inter', 
               },
               {
                 label: 'Concurrency',
@@ -123,17 +124,20 @@ const formatTime = (time) => {
 return (
   <div
     style={{
-      width: '90%', /* Set the width to 90% of the container width */
-      height: '57vh', /* Set the height to 50% of the viewport height */
-      margin: 'auto', /* Center the component horizontally */
-      borderRadius: '1.2vw', /* Set border radius (1.2% of the viewport width) */
+      width: '717.71px',
+      height: '233.33px',
+      top: '248px',
+      left: '230px',
+      padding: '14.58px 11.87px 0px 11.67px',
+      gap: '0px',
+      borderRadius: '11.67px',
+      opacity: '0px',
+      overflow: 'hidden', // Hide overflow content
+      position: 'absolute',
       background: '#F7F9FB',
-      textAlign: 'center',
-      paddingTop: '2%', /* Add padding to the top (2% of the container height) */
-      boxSizing: 'border-box' /* Include padding and border in the element's total width and height */
     }}
   >
-    <canvas id="lineChart" width="800" height="400"></canvas>
+    <canvas id="lineChart" width="700" height="200"style={{ paddingBottom: '1px' }} ></canvas> {/* Adjust width and height of canvas */}
   </div>
 );
 
