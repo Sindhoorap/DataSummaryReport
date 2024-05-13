@@ -19,8 +19,8 @@ function DataDisplay({ testDetails }) {
 
     return (
         <div>
-           <h1 className="test-details-title">Performance Test Results - NBCU US</h1>
-           <hr className="title-line" />
+            <h1 className="test-details-title">Performance Test Results - NBCU US</h1>
+            <hr className="title-line" />
             <select value={selectedTestId} onChange={handleTestIdChange} className="my-dropdown">
                 <option value="">Select TestId</option>
                 {filteredTestDetails.map(detail => (
@@ -30,22 +30,21 @@ function DataDisplay({ testDetails }) {
             <br />
             {selectedTestDetail && (
                 <div className="selected-test-details">
-                    <div className="test-details-box">
-                        <p className="test-id">
-                            <strong>Test ID</strong> 
-                        </p>
-                        <p className="selected-test-id">
-                            {selectedTestDetail.TestId}
-                        </p>
-                    </div>
-                    <div className="test-details-box">
-                        <p className="test-id">
-                            <strong>Run Date</strong>
-                        </p>
-                        <p className="selected-test-id"> {selectedTestDetail.RunDate}</p>
-                    </div>
-                    
-                    <div className="test-details-box">
+                    <div className="test-details-row">
+                        <div className="test-details-box">
+                            <p className="test-id">
+                                <strong>Test ID</strong> 
+                            </p>
+                            <p className="selected-test-id">{selectedTestDetail.TestId}</p>
+                        </div>
+                        <div className="test-details-box">
+                            <p className="test-id">
+                                <strong>Run Date</strong>
+                            </p>
+                            <p className="selected-test-id">{selectedTestDetail.RunDate}</p>
+                        </div>
+                        {/* Add other test details boxes in the first row */}
+                        <div className="test-details-box">
                         <p className="test-id">
                             <strong>Test</strong> 
                         </p>
@@ -63,23 +62,22 @@ function DataDisplay({ testDetails }) {
                         </p>
                         <p className="selected-test-id">{selectedTestDetail.PeakDuration}</p>
                     </div>
-                    <div className="test-details-box">
-                        <p className="test-id">
-                            <strong>Valid Test Run</strong> 
-                        </p>
-                        <p className="selected-test-id">{selectedTestDetail.ValidTestRun}</p>
-                    </div>
+                   
                     <div className="test-details-box">
                         <p className="test-id">
                             <strong>Status</strong> 
                         </p>
                         <p className="selected-test-id">{selectedTestDetail.Status}</p>
                     </div>
-                    <div className="test-details-box">
-                        <p className="test-id">
-                            <strong>Description</strong> 
-                        </p>
-                        <p className="selected-test-id">{selectedTestDetail.Description}</p>
+                    </div>
+                    <div className="test-details-row test-details-row-right">
+                        <div className="test-details-box">
+                            <p className="test-id">
+                                <strong>Description</strong> 
+                            </p>
+                            <p className="selected-test-id">{selectedTestDetail.Description}</p>
+                        </div>
+                        {/* Add other test details boxes in the second row */}
                     </div>
                 </div>
             )}
