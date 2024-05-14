@@ -51,6 +51,16 @@ function DataDisplay({ testDetails }) {
         setShowDisabledFeatures(!showDisabledFeatures);
     };
 
+    // Function to get the title for the first box based on the showDisabledFeatures state
+    const getFirstBoxTitle = () => {
+        return showDisabledFeatures ? "Feature Disabled" : "Test Settings";
+    };
+
+    // Function to get the title for the second box based on the showDisabledFeatures state
+    const getSecondBoxTitle = () => {
+        return showDisabledFeatures ? "Other Features" : "Test Settings";
+    };
+
     return (
         <div>
             <h1 className="test-details-title">Performance Test Results - NBCU US</h1>
@@ -117,7 +127,7 @@ function DataDisplay({ testDetails }) {
             {selectedTestDetail && testSettingsData && (
                 <div className="test-settings-container">
                     <div className="test-settings-box" onClick={toggleDisabledFeatures}>
-                        <h2>Test Settings</h2>
+                        <h2>{getFirstBoxTitle()}</h2>
                         <hr className="box-title-line" />
                         <ul>
                             {!showDisabledFeatures && <li>Click to view disabled and other features</li>}
@@ -132,14 +142,13 @@ function DataDisplay({ testDetails }) {
                     </div>
                     {showDisabledFeatures && (
                         <div className="test-settings-box scrollable-box">
-                            <h2>Other Features</h2>
+                            <h2>{getSecondBoxTitle()}</h2>
                             <hr className="box-title-line" />
                             <ul>
                                 {nonZeroValueSettings.map(([key, value]) => (
                                     <li key={key}><span className="setting-name">{key}:</span> <span className="setting-value">{value}</span></li>
                                 ))}
                             </ul>
-                           
                         </div>
                     )}
                 </div>
@@ -150,4 +159,3 @@ function DataDisplay({ testDetails }) {
 }
 
 export default DataDisplay;
-
