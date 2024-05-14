@@ -1,7 +1,7 @@
 .selected-test-details {
-  display: flex-start;
+  display: flex;
   flex-direction: column;
-  align-items: stretch; /* Center items horizontally */
+  align-items: stretch;
 }
 
 .test-details-row {
@@ -9,107 +9,92 @@
 }
 
 .test-details-row-right {
-  justify-content: flex-end; /* Align items to the right */
-  
+  justify-content: flex-end;
 }
 
 .test-details-box {
   background-color: #E7E7E7;
-  width: 200px; /* Reduce the width of each box */
-  height: 65px; /* Reduce the height of each box */
+  width: 200px;
+  height: 65px;
   border-radius: 11.67px;
   padding: 10px;
-  margin: 10px; /* Add margin to create space between boxes */
+  margin: 10px;
   font-family: 'Inter', sans-serif;
-  font-weight: 600; /* Semi bold */
+  font-weight: 600;
   font-size: 10.21px;
   line-height: 14.6px;
-  align-items: center; 
+  align-items: center;
 }
 
 .test-details-row-right .test-details-box {
-  margin-left: 800px; /* Move the box to the right */
+  margin-left: 800px;
   margin-top: 62px;
-  height: 250px; 
+  height: 250px;
   margin-right: 70px;
 }
 
 .test-details-title {
-  font-family: 'Inter', sans-serif; /* Set font family */
-  font-size: 20px; /* Set font size */
-  font-weight: bold; /* Set font weight */
-  line-height: 20px; /* Set line height */
-  text-align: center; /* Center align the text */
-  width: 100%; /* Make the title span the full width of the container */
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  width: 100%;
 }
 
 .title-line {
   border: none;
-  height: 1px; /* Adjust the thickness of the line */
-  background-color: #cdcdcd; /* Fill color */
-  width: 1500px; /* Make the line span the full width of the container */
+  height: 1px;
+  background-color: #cdcdcd;
+  width: 1500px;
 }
 
 .my-dropdown {
-  border: none; /* Remove border */
-  font-family: 'Inter', sans-serif; /* Use Inter font */
-  font-weight: 600; /* Semi bold */
-  font-size: 12px; /* Adjust font size */
-  resize: horizontal; /* Enable horizontal resizing */
-  line-height: 14.6px; 
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  resize: horizontal;
+  line-height: 14.6px;
   margin-left: 10px;
 }
 
 .test-id-label {
   font-family: 'Inter', sans-serif;
-  font-weight: 600; /* Semi bold */
+  font-weight: 600;
   font-size: 10.21px;
   line-height: 14.6px;
 }
 
 .selected-test-id {
   font-family: 'Inter', sans-serif;
-  font-weight: 600; /* Semi bold */
+  font-weight: 600;
   font-size: 17.5px;
   line-height: 26.3px;
 }
 
 .test-id,
 .selected-test-id {
-  margin: 0; /* Reset margin for paragraphs */
+  margin: 0;
 }
 
 .selected-test-id {
-  font-size: 17.5px; /* Adjusted size for selected Test ID */
-  line-height: 26.3px; /* Adjusted line height for selected Test ID */
-  padding-top: 5px; /* Add padding to separate Test ID and selected Test ID */
+  font-size: 17.5px;
+  line-height: 26.3px;
+  padding-top: 5px;
 }
 
-/* Adjustments for app-container and frame */
 .app-container {
   display: flex;
-  align-items: stretch; /* Stretch the children to match the height of the container */
+  align-items: stretch;
 }
 
 .frame {
-  width: 200px; /* Set the width of the frame */
-  height: 100vh; /* Set the height of the frame to 80% of the viewport height */
-  background-color: #D02323; /* Set the background color of the frame */
-  padding: 20px; /* Add padding to the frame */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-}
-.test-details-box {
-  background-color: #E7E7E7;
-  width: 200px; /* Reduce the width of each box */
-  height: 65px; /* Reduce the height of each box */
-  border-radius: 11.67px;
-  padding: 10px;
-  margin: 10px; /* Add margin to create space between boxes */
-  font-family: 'Inter', sans-serif;
-  font-weight: 600; /* Semi bold */
-  font-size: 10.21px;
-  line-height: 14.6px;
-  align-items: center; 
+  width: 200px;
+  height: 100vh;
+  background-color: #D02323;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .test-settings-box {
@@ -117,26 +102,49 @@
   padding: 10px;
   margin-top: 20px;
   background-color: #E7E7E7;
-  width: 450px;
-  height: 440px; /* Limit the height */
+  width: 300px; /* Adjusted width for auto size */
   margin-left: 10px;
-  overflow-y: auto; /* Enable vertical scrolling */
+  height: auto; /* Ensure height adjusts automatically based on content */
 }
+
 .test-settings-box h2 {
-  color: #333; 
+  color: #333;
   font-size: 10.21px;
   margin-bottom: 5px;
   font-family: 'Inter', sans-serif;
-  font-weight: 600; /* Semi bold */
+  font-weight: 600;
 }
 
-.test-settings-box pre {
-  font-family: 'Inter', sans-serif;
-  font-size: 17.5px;
-  white-space: pre-wrap;
+.test-settings-box ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
+
+.setting-name {
+  font-weight: bold;
+}
+
+.setting-value {
+  font-size: larger;
+}
+
+.box-title-line {
+  border: none;
+  height: 1px;
+  background-color: #cdcdcd;
+  width: 100%;
+  margin: 10px 0;
+}
+
 .test-settings-container {
   display: grid;
-  grid-template-columns: 0.5fr 1fr; /* Two columns */
-  gap: 5px; /* Adjust gap as needed */
+  grid-template-columns: auto 1fr;
+  gap: 5px; /* Reduced gap */
+}
+
+.scrollable-box {
+  max-height: 300px; /* Reduced height for scrollable box */
+  overflow-y: auto;
+  width: 450px; /* Fixed width */
 }

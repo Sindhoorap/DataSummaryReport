@@ -7,8 +7,6 @@ function DataDisplay({ testDetails }) {
     const [selectedTestDetail, setSelectedTestDetail] = useState(null);
     const [testSettingsData, setTestSettingsData] = useState({});
     const [error, setError] = useState(null);
-    //const totalKeys = Object.keys(testSettingsData).length;
-    //const splitIndex = Math.ceil(totalKeys * 0.48); // Splitting at 60%
 
     // Function to handle TestId selection change
     const handleTestIdChange = (event) => {
@@ -23,9 +21,13 @@ function DataDisplay({ testDetails }) {
 
     // Fetch test settings based on the selected test ID
     const fetchTestSettings = (testId) => {
-        // Assuming the test settings data is stored in a JSON file named 'testSettings.json'
         fetch(`/testSettings{id}.json`) // Adjust the path based on your file structure
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.json();
+            })
             .then(data => {
                 setTestSettingsData(data);
                 setError(null); // Clear any previous errors
@@ -70,7 +72,6 @@ function DataDisplay({ testDetails }) {
                             </p>
                             <p className="selected-test-id">{selectedTestDetail.RunDate}</p>
                         </div>
-                        {/* Add other test details boxes in the first row */}
                         <div className="test-details-box">
                             <p className="test-id">
                                 <strong>Test</strong> 
@@ -103,34 +104,32 @@ function DataDisplay({ testDetails }) {
                             </p>
                             <p className="selected-test-id">{selectedTestDetail.Description}</p>
                         </div>
-                        {/* Add other test details boxes in the second row */}
                     </div>
                 </div>
             )}
-            {/* Render chart component based on selected test */}
             {selectedTestDetail && <ChartComponent selectedTestDetail={selectedTestDetail} />}
-            {/* Box containing test settings information */}
             {selectedTestDetail && testSettingsData && (
                 <div className="test-settings-container">
-                    <div className="test-settings-box">
+                    <div className="test-settings-box zero-values-box">
                         <h2>Settings with Value 0</h2>
+                        <hr className="box-title-line" />
                         <ul>
                             {zeroValueSettings.map(([key, value]) => (
-                                <li key={key}><strong>{key}:</strong> {value}</li>
+                                <li key={key}><span className="setting-name">{key}:</span> <span className="setting-value">{value}</span></li>
                             ))}
                         </ul>
                     </div>
-                    <div className="test-settings-box">
+                    <div className="test-settings-box scrollable-box">
                         <h2>Other Settings</h2>
+                        <hr className="box-title-line" />
                         <ul>
                             {nonZeroValueSettings.map(([key, value]) => (
-                                <li key={key}><strong>{key}:</strong> {value}</li>
+                                <li key={key}><span className="setting-name">{key}:</span> <span className="setting-value">{value}</span></li>
                             ))}
                         </ul>
                     </div>
                 </div>
             )}
-            {/* Error message */}
             {error && <div className="error">{error}</div>}
         </div>
     );
