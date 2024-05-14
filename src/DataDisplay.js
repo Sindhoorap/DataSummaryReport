@@ -5,6 +5,10 @@ import ChartComponent from './ChartComponent';
 function DataDisplay({ testDetails }) {
     const [selectedTestId, setSelectedTestId] = useState('');
     const [selectedTestDetail, setSelectedTestDetail] = useState(null);
+    const [testSettingsData, setTestSettingsData] = useState({});
+    const [error, setError] = useState(null);
+    const totalKeys = Object.keys(testSettingsData).length;
+    const splitIndex = Math.ceil(totalKeys * 0.48); // Splitting at 60%
 
     // Function to handle TestId selection change
     const handleTestIdChange = (event) => {
@@ -12,6 +16,24 @@ function DataDisplay({ testDetails }) {
         setSelectedTestId(id);
         const selectedDetail = testDetails.find(detail => detail.TestId === id);
         setSelectedTestDetail(selectedDetail);
+
+        // Fetch test settings based on the selected test ID
+        fetchTestSettings(id);
+    };
+
+    // Fetch test settings based on the selected test ID
+    const fetchTestSettings = (testId) => {
+        // Assuming the test settings data is stored in a JSON file named 'testSettings.json'
+        fetch(`/testSettings{id}.json`) // Adjust the path based on your file structure
+            .then(response => response.json())
+            .then(data => {
+                setTestSettingsData(data);
+                setError(null); // Clear any previous errors
+            })
+            .catch(error => {
+                console.error('Error fetching test settings:', error);
+                setError('Error fetching test settings');
+            });
     };
 
     // Remove the selected test ID from the list of options
@@ -31,6 +53,7 @@ function DataDisplay({ testDetails }) {
             {selectedTestDetail && (
                 <div className="selected-test-details">
                     <div className="test-details-row">
+                        {/* Render selected test details */}
                         <div className="test-details-box">
                             <p className="test-id">
                                 <strong>Test ID</strong> 
@@ -45,30 +68,29 @@ function DataDisplay({ testDetails }) {
                         </div>
                         {/* Add other test details boxes in the first row */}
                         <div className="test-details-box">
-                        <p className="test-id">
-                            <strong>Test</strong> 
-                        </p>
-                        <p className="selected-test-id">{selectedTestDetail.Test}</p>
-                    </div>
-                    <div className="test-details-box">
-                        <p className="test-id">
-                            <strong>Peak Number</strong>
-                        </p>
-                        <p className="selected-test-id"> {selectedTestDetail.PeakNumber}</p>
-                    </div>
-                    <div className="test-details-box">
-                        <p className="test-id">
-                            <strong>Peak Duration</strong> 
-                        </p>
-                        <p className="selected-test-id">{selectedTestDetail.PeakDuration}</p>
-                    </div>
-                   
-                    <div className="test-details-box">
-                        <p className="test-id">
-                            <strong>Status</strong> 
-                        </p>
-                        <p className="selected-test-id">{selectedTestDetail.Status}</p>
-                    </div>
+                            <p className="test-id">
+                                <strong>Test</strong> 
+                            </p>
+                            <p className="selected-test-id">{selectedTestDetail.Test}</p>
+                        </div>
+                        <div className="test-details-box">
+                            <p className="test-id">
+                                <strong>Peak Number</strong>
+                            </p>
+                            <p className="selected-test-id">{selectedTestDetail.PeakNumber}</p>
+                        </div>
+                        <div className="test-details-box">
+                            <p className="test-id">
+                                <strong>Peak Duration</strong> 
+                            </p>
+                            <p className="selected-test-id">{selectedTestDetail.PeakDuration}</p>
+                        </div>
+                        <div className="test-details-box">
+                            <p className="test-id">
+                                <strong>Status</strong> 
+                            </p>
+                            <p className="selected-test-id">{selectedTestDetail.Status}</p>
+                        </div>
                     </div>
                     <div className="test-details-row test-details-row-right">
                         <div className="test-details-box">
@@ -81,7 +103,31 @@ function DataDisplay({ testDetails }) {
                     </div>
                 </div>
             )}
+            {/* Render chart component based on selected test */}
             {selectedTestDetail && <ChartComponent selectedTestDetail={selectedTestDetail} />}
+            {/* Box containing test settings information */}
+            {selectedTestDetail && testSettingsData && (
+                <div className="test-settings-container">
+                    <div className="test-settings-box">
+                        <h2>Test Settings</h2>
+                        <ul>
+                            {Object.entries(testSettingsData).slice(0, splitIndex).map(([key, value]) => (
+                                <li key={key}><strong>{key}:</strong> {value}</li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className="test-settings-box">
+                       
+                        <ul>
+                            {Object.entries(testSettingsData).slice(splitIndex).map(([key, value]) => (
+                                <li key={key}><strong>{key}:</strong> {value}</li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+            )}
+            {/* Error message */}
+            {error && <div className="error">{error}</div>}
         </div>
     );
 }

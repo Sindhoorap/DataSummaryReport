@@ -128,8 +128,8 @@ return (
       borderRadius: '11.67px',
       background: '#F7F9FB',
       display: 'flex',
-      justifyContent: 'center', // Center the content horizontally
-      alignItems: 'center', // Center the content vertically
+      justifyContent: 'center', 
+      alignItems: 'center', 
       marginTop: '-265px',
       marginLeft:'20px'
     }}

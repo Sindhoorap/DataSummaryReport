@@ -98,3 +98,46 @@
   padding: 20px; /* Add padding to the frame */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
+.test-details-box {
+  background-color: #E7E7E7;
+  width: 200px; /* Reduce the width of each box */
+  height: 65px; /* Reduce the height of each box */
+  border-radius: 11.67px;
+  padding: 10px;
+  margin: 10px; /* Add margin to create space between boxes */
+  font-family: 'Inter', sans-serif;
+  font-weight: 600; /* Semi bold */
+  font-size: 10.21px;
+  line-height: 14.6px;
+  align-items: center; 
+}
+
+.test-settings-box {
+  
+  border-radius: 11.67px;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #E7E7E7;
+  width: 450px;
+  height: 440px;
+  margin-left: 10px;
+}
+
+.test-settings-box h2 {
+  color: #333; 
+  font-size: 10.21px;
+  margin-bottom: 5px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600; /* Semi bold */
+}
+
+.test-settings-box pre {
+  font-family: 'Inter', sans-serif;
+  font-size: 17.5px;
+  white-space: pre-wrap;
+}
+.test-settings-container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr; /* Two columns */
+  gap: 5px; /* Adjust gap as needed */
+}
