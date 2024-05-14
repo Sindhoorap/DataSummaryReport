@@ -42,7 +42,7 @@ function DataDisplay({ testDetails }) {
     const filteredTestDetails = testDetails.filter(detail => detail.TestId !== parseInt(selectedTestId));
 
     // Filter out settings with values equal to 0
-    const zeroValueSettings = Object.entries(testSettingsData).filter(([key, value]) => value === 0);
+    const zeroValueSettings = Object.entries(testSettingsData).filter(([key, value]) => value === 0).map(([key]) => key);
     const nonZeroValueSettings = Object.entries(testSettingsData).filter(([key, value]) => value !== 0);
 
     return (
@@ -111,22 +111,25 @@ function DataDisplay({ testDetails }) {
             {selectedTestDetail && testSettingsData && (
                 <div className="test-settings-container">
                     <div className="test-settings-box zero-values-box">
-                        <h2>Settings with Value 0</h2>
+                        <h2>Feature Disabled</h2>
                         <hr className="box-title-line" />
                         <ul>
-                            {zeroValueSettings.map(([key, value]) => (
-                                <li key={key}><span className="setting-name">{key}:</span> <span className="setting-value">{value}</span></li>
+                            {zeroValueSettings.map((key) => (
+                                <li key={key}>
+                                    {key}
+                                </li>
                             ))}
                         </ul>
                     </div>
                     <div className="test-settings-box scrollable-box">
-                        <h2>Other Settings</h2>
+                        <h2>Other Features</h2>
                         <hr className="box-title-line" />
                         <ul>
-                            {nonZeroValueSettings.map(([key, value]) => (
+                        {nonZeroValueSettings.map(([key, value]) => (
                                 <li key={key}><span className="setting-name">{key}:</span> <span className="setting-value">{value}</span></li>
                             ))}
                         </ul>
+                        
                     </div>
                 </div>
             )}
