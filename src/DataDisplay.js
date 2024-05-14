@@ -7,8 +7,8 @@ function DataDisplay({ testDetails }) {
     const [selectedTestDetail, setSelectedTestDetail] = useState(null);
     const [testSettingsData, setTestSettingsData] = useState({});
     const [error, setError] = useState(null);
-    const totalKeys = Object.keys(testSettingsData).length;
-    const splitIndex = Math.ceil(totalKeys * 0.48); // Splitting at 60%
+    //const totalKeys = Object.keys(testSettingsData).length;
+    //const splitIndex = Math.ceil(totalKeys * 0.48); // Splitting at 60%
 
     // Function to handle TestId selection change
     const handleTestIdChange = (event) => {
@@ -38,6 +38,10 @@ function DataDisplay({ testDetails }) {
 
     // Remove the selected test ID from the list of options
     const filteredTestDetails = testDetails.filter(detail => detail.TestId !== parseInt(selectedTestId));
+
+    // Filter out settings with values equal to 0
+    const zeroValueSettings = Object.entries(testSettingsData).filter(([key, value]) => value === 0);
+    const nonZeroValueSettings = Object.entries(testSettingsData).filter(([key, value]) => value !== 0);
 
     return (
         <div>
@@ -109,17 +113,17 @@ function DataDisplay({ testDetails }) {
             {selectedTestDetail && testSettingsData && (
                 <div className="test-settings-container">
                     <div className="test-settings-box">
-                        <h2>Test Settings</h2>
+                        <h2>Settings with Value 0</h2>
                         <ul>
-                            {Object.entries(testSettingsData).slice(0, splitIndex).map(([key, value]) => (
+                            {zeroValueSettings.map(([key, value]) => (
                                 <li key={key}><strong>{key}:</strong> {value}</li>
                             ))}
                         </ul>
                     </div>
                     <div className="test-settings-box">
-                       
+                        <h2>Other Settings</h2>
                         <ul>
-                            {Object.entries(testSettingsData).slice(splitIndex).map(([key, value]) => (
+                            {nonZeroValueSettings.map(([key, value]) => (
                                 <li key={key}><strong>{key}:</strong> {value}</li>
                             ))}
                         </ul>
