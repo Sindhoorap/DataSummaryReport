@@ -102,7 +102,7 @@
   padding: 10px;
   margin-top: 20px;
   background-color: #E7E7E7;
-  width: 300px; /* Adjusted width for auto size */
+  width: 200px; /* Adjusted width for auto size */
   margin-left: 10px;
   height: auto; /* Ensure height adjusts automatically based on content */
 }
@@ -122,11 +122,13 @@
 }
 
 .setting-name {
-  font-weight: bold;
+  
+  font-family: 'Inter', sans-serif;
 }
 
 .setting-value {
-  font-size: larger;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .box-title-line {
@@ -146,5 +148,5 @@
 .scrollable-box {
   max-height: 300px; /* Reduced height for scrollable box */
   overflow-y: auto;
-  width: 450px; /* Fixed width */
+  width: 350px; /* Fixed width */
 }
