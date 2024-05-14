@@ -7,6 +7,7 @@ function DataDisplay({ testDetails }) {
     const [selectedTestDetail, setSelectedTestDetail] = useState(null);
     const [testSettingsData, setTestSettingsData] = useState({});
     const [error, setError] = useState(null);
+    const [showDisabledFeatures, setShowDisabledFeatures] = useState(false);
 
     // Function to handle TestId selection change
     const handleTestIdChange = (event) => {
@@ -44,6 +45,11 @@ function DataDisplay({ testDetails }) {
     // Filter out settings with values equal to 0
     const zeroValueSettings = Object.entries(testSettingsData).filter(([key, value]) => value === 0).map(([key]) => key);
     const nonZeroValueSettings = Object.entries(testSettingsData).filter(([key, value]) => value !== 0);
+
+    // Toggle the visibility of disabled features box
+    const toggleDisabledFeatures = () => {
+        setShowDisabledFeatures(!showDisabledFeatures);
+    };
 
     return (
         <div>
@@ -110,27 +116,32 @@ function DataDisplay({ testDetails }) {
             {selectedTestDetail && <ChartComponent selectedTestDetail={selectedTestDetail} />}
             {selectedTestDetail && testSettingsData && (
                 <div className="test-settings-container">
-                    <div className="test-settings-box zero-values-box">
-                        <h2>Feature Disabled</h2>
+                    <div className="test-settings-box" onClick={toggleDisabledFeatures}>
+                        <h2>Test Settings</h2>
                         <hr className="box-title-line" />
                         <ul>
-                            {zeroValueSettings.map((key) => (
-                                <li key={key}>
-                                    {key}
-                                </li>
-                            ))}
+                            {!showDisabledFeatures && <li>Click to view disabled and other features</li>}
+                            {showDisabledFeatures && (
+                                zeroValueSettings.map((key) => (
+                                    <li key={key}>
+                                        {key}
+                                    </li>
+                                ))
+                            )}
                         </ul>
                     </div>
-                    <div className="test-settings-box scrollable-box">
-                        <h2>Other Features</h2>
-                        <hr className="box-title-line" />
-                        <ul>
-                        {nonZeroValueSettings.map(([key, value]) => (
-                                <li key={key}><span className="setting-name">{key}:</span> <span className="setting-value">{value}</span></li>
-                            ))}
-                        </ul>
-                        
-                    </div>
+                    {showDisabledFeatures && (
+                        <div className="test-settings-box scrollable-box">
+                            <h2>Other Features</h2>
+                            <hr className="box-title-line" />
+                            <ul>
+                                {nonZeroValueSettings.map(([key, value]) => (
+                                    <li key={key}><span className="setting-name">{key}:</span> <span className="setting-value">{value}</span></li>
+                                ))}
+                            </ul>
+                           
+                        </div>
+                    )}
                 </div>
             )}
             {error && <div className="error">{error}</div>}
@@ -139,3 +150,4 @@ function DataDisplay({ testDetails }) {
 }
 
 export default DataDisplay;
+
