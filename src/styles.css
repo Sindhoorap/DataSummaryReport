@@ -26,10 +26,10 @@
   align-items: center;
 }
 
-.test-details-row-right .test-details-box {
+.test-details-row-right .test-details-box{
   margin-left: 800px;
   margin-top: 62px;
-  height: 250px;
+  height: 230px;
   margin-right: 70px;
 }
 
@@ -131,6 +131,12 @@
 
 
 
+.setting-item {
+  display: flex;
+  justify-content: space-between; /* Distribute space between name and value */
+   margin-bottom: 5px; /* Add space between items */
+}  
+
 .test-settings-box ul {
   padding: 0;
   margin: 0;
@@ -138,13 +144,16 @@
 }
 
 .setting-name {
-  
+  flex: 1; /* Allow name to take available space */
   font-family: 'Inter', sans-serif;
+  text-align: left;
 }
 
 .setting-value {
   font-size: 15px;
   font-weight: bold;
+  text-align: right; /* Right align the value */
+  flex: 1; /* Allow value to take available space */
 }
 
 
@@ -158,4 +167,14 @@
   max-height: 300px; /* Reduced height for scrollable box */
   overflow-y: auto;
   width: 350px; /* Fixed width */
+}
+/* Styles for the chart component */
+.chart-container {
+  width: 1150px;
+  height: 250px;
+  border-radius: 11.67px;
+  background: #F7F9FB;
+  align-items: center;
+ margin-top: -260px;
+  margin-left: 10px;
 }

@@ -121,21 +121,9 @@ const formatTime = (time) => {
 };
 
 return (
-  <div
-    style={{
-      width: '1150px',
-      height: '250px',
-      borderRadius: '11.67px',
-      background: '#F7F9FB',
-      display: 'flex',
-      justifyContent: 'center', 
-      alignItems: 'center', 
-      marginTop: '-265px',
-      marginLeft:'20px'
-    }}
-  >
-    <canvas id="lineChart" style={{ width: '95%', height: '95%' }} ></canvas> {/* Adjust width and height of canvas */}
-  </div>
+  <div className="chart-container">
+      <canvas id="lineChart" style={{ width: '100%', height: '100%' }} ></canvas>
+    </div>
 );
 
 

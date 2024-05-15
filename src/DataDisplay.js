@@ -133,8 +133,8 @@ function DataDisplay({ testDetails }) {
                             {!showDisabledFeatures && <li>Click to view disabled and other features</li>}
                             {showDisabledFeatures && (
                                 zeroValueSettings.map((key) => (
-                                    <li key={key}>
-                                        {key}
+                                    <li key={key} className="setting-item">
+                                       <span className="setting-name">{key}</span> 
                                     </li>
                                 ))
                             )}
@@ -146,7 +146,9 @@ function DataDisplay({ testDetails }) {
                             <hr className="box-title-line" />
                             <ul>
                                 {nonZeroValueSettings.map(([key, value]) => (
-                                    <li key={key}><span className="setting-name">{key}:</span> <span className="setting-value">{value}</span></li>
+                                     <li key={key} className="setting-item">
+                                        <span className="setting-name">{key}</span> 
+                                    <span className="setting-value">{value}</span></li>
                                 ))}
                             </ul>
                         </div>
