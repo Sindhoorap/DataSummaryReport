@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './styles.css'; // Import the CSS file for styling
 import ChartComponent from './ChartComponent';
+//import ChartTwo from './ChartTwo';
 
 function DataDisplay({ testDetails }) {
     const [selectedTestId, setSelectedTestId] = useState('');
@@ -67,7 +68,7 @@ function DataDisplay({ testDetails }) {
             <hr className="title-line" />
             <select value={selectedTestId} onChange={handleTestIdChange} className="my-dropdown">
                 <option value="">Select TestId</option>
-                {filteredTestDetails.map(detail => (
+                {testDetails.map(detail => (
                     <option key={detail.TestId} value={detail.TestId}>{detail.TestId}</option>
                 ))}
             </select>
