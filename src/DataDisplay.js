@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styles.css'; // Import the CSS file for styling
 import ChartComponent from './ChartComponent';
-//import ChartTwo from './ChartTwo';
+import ChartComponentTwo from './ChartComponentTwo';
 
 function DataDisplay({ testDetails }) {
     const [selectedTestId, setSelectedTestId] = useState('');
@@ -41,7 +41,7 @@ function DataDisplay({ testDetails }) {
     };
 
     // Remove the selected test ID from the list of options
-    const filteredTestDetails = testDetails.filter(detail => detail.TestId !== parseInt(selectedTestId));
+  //  const filteredTestDetails = testDetails.filter(detail => detail.TestId !== parseInt(selectedTestId));
 
     // Filter out settings with values equal to 0
     const zeroValueSettings = Object.entries(testSettingsData).filter(([key, value]) => value === 0).map(([key]) => key);
@@ -124,7 +124,11 @@ function DataDisplay({ testDetails }) {
                     </div>
                 </div>
             )}
-            {selectedTestDetail && <ChartComponent selectedTestDetail={selectedTestDetail} />}
+            {selectedTestDetail && (
+                selectedTestId === 11111908765 ? 
+                    <ChartComponentTwo selectedTestDetail={selectedTestDetail} /> : 
+                    <ChartComponent selectedTestDetail={selectedTestDetail} />
+            )}
             {selectedTestDetail && testSettingsData && (
                 <div className="test-settings-container">
                     <div className="test-settings-box" onClick={toggleDisabledFeatures}>
