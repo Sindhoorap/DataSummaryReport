@@ -189,3 +189,9 @@ body {
   font-family: 'Dot2.s', sans-serif;
 }
 
+@media (max-width: 1200px) {
+  .chart-container {
+    width: 100%; /* Adjust width for smaller screens */
+    left: 0; /* Adjust left position for smaller screens */
+  }
+}
