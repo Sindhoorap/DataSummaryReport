@@ -55,6 +55,9 @@ const getChartConfig = (times, signups, concurrency, liveSuccess) => ({
           maxRotation: 0,
           minRotation: 0,
         },
+        grid: {
+          drawOnChartArea: false,
+        },
       },
       y: {
         title: {

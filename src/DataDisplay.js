@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './styles.css'; // Import the CSS file for styling
 import ChartComponent from './ChartComponent';
 import ChartComponentTwo from './ChartComponentTwo';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 function DataDisplay({ testDetails }) {
     const [selectedTestId, setSelectedTestId] = useState('');
@@ -9,6 +11,7 @@ function DataDisplay({ testDetails }) {
     const [testSettingsData, setTestSettingsData] = useState({});
     const [error, setError] = useState(null);
     const [showDisabledFeatures, setShowDisabledFeatures] = useState(false);
+    const [searchQuery, setSearchQuery] = useState('');
 
     // Function to handle TestId selection change
     const handleTestIdChange = (event) => {
@@ -40,9 +43,6 @@ function DataDisplay({ testDetails }) {
             });
     };
 
-    // Remove the selected test ID from the list of options
-  //  const filteredTestDetails = testDetails.filter(detail => detail.TestId !== parseInt(selectedTestId));
-
     // Filter out settings with values equal to 0
     const zeroValueSettings = Object.entries(testSettingsData).filter(([key, value]) => value === 0).map(([key]) => key);
     const nonZeroValueSettings = Object.entries(testSettingsData).filter(([key, value]) => value !== 0);
@@ -61,6 +61,14 @@ function DataDisplay({ testDetails }) {
     const getSecondBoxTitle = () => {
         return showDisabledFeatures ? "Other Features" : "Test Settings";
     };
+
+    // Function to handle search input change
+    const handleSearchChange = (event) => {
+        setSearchQuery(event.target.value);
+    };
+
+    // Filter the non-zero value settings based on the search query
+    const filteredNonZeroValueSettings = nonZeroValueSettings.filter(([key]) => key.toLowerCase().includes(searchQuery.toLowerCase()));
 
     return (
         <div>
@@ -132,7 +140,7 @@ function DataDisplay({ testDetails }) {
             {selectedTestDetail && testSettingsData && (
                 <div className="test-settings-container">
                     <div className="test-settings-box" onClick={toggleDisabledFeatures}>
-                        <h2>{getFirstBoxTitle()}</h2>
+                        <h2 className="left-aligned-title title-padding">{getFirstBoxTitle()}</h2>
                         <hr className="box-title-line" />
                         <ul>
                             {!showDisabledFeatures && <li>Click to view disabled and other features</li>}
@@ -147,13 +155,25 @@ function DataDisplay({ testDetails }) {
                     </div>
                     {showDisabledFeatures && (
                         <div className="test-settings-box scrollable-box">
-                            <h2>{getSecondBoxTitle()}</h2>
+                            <div className="title-and-search">
+                                <h2 className="left-aligned-title title-padding">{getSecondBoxTitle()}</h2>
+                                <div className="search-container">
+                                    <FontAwesomeIcon icon={faSearch} className="search-icon" />
+                                    <input
+                                        type="text"
+                                        placeholder="Search"
+                                        value={searchQuery}
+                                        onChange={handleSearchChange}
+                                        className="search-input"
+                                    />
+                                </div>
+                            </div>
                             <hr className="box-title-line" />
                             <ul>
-                                {nonZeroValueSettings.map(([key, value]) => (
+                                {filteredNonZeroValueSettings.map(([key, value]) => (
                                      <li key={key} className="setting-item">
                                         <span className="setting-name">{key}</span> 
-                                    <span className="setting-value">{value}</span></li>
+                                        <span className="setting-value">{value}</span></li>
                                 ))}
                             </ul>
                         </div>
