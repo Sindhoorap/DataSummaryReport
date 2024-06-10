@@ -186,7 +186,8 @@
   border: none;
   background-color: transparent;
   color:  #333;/* Adjust this based on your background color for better visibility */
-  font-size: 12px; /* Reduce font size */
+  font-size: 15px; /* Reduce font size */
+  font-family: 'Inter', sans-serif;
   width: 50px; /* Adjust width to fit the text "Search" */
 }
 
@@ -195,7 +196,7 @@
 }
 
 .search-icon {
-  font-size: 12px; /* Reduce icon size */
+  font-size: 13px; /* Reduce icon size */
   color: #989898; /* Adjust this based on your background color */
 }
 
@@ -203,7 +204,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  /* position: sticky;
+  top: 0;
+  background-color: inherit; */
 }
 
 .left-aligned-title {
@@ -217,7 +220,6 @@
 
 .scrollable-box {
   overflow-y: auto;
-  max-height: 400px;
 }
 
 
