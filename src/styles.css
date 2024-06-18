@@ -98,13 +98,13 @@
 }
 
 .test-settings-box {
-  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+  cursor: pointer; 
   background-color: #e7e7e7;
   border-radius: 11.67px;
   padding: 10px;
   margin-top: 20px;
-  width: 200px; /* Adjust width as needed */
-  text-align: left; /* Center align text */
+  width: 200px; 
+  text-align: left; 
   transition: background-color 0.3s; /* Add transition for smooth hover effect */
   margin-left: 10px;
 }
@@ -144,7 +144,7 @@
 }
 
 .setting-name {
-  flex: 1; /* Allow name to take available space */
+  flex: 1; 
   font-family: 'Inter', sans-serif;
   text-align: left;
 }
@@ -152,7 +152,7 @@
 .setting-value {
   font-size: 15px;
   font-weight: bold;
-  text-align: right; /* Right align the value */
+  text-align: right; 
   flex: 1; /* Allow value to take available space */
 }
 
@@ -166,7 +166,7 @@
 .scrollable-box {
   max-height: 300px; /* Reduced height for scrollable box */
   overflow-y: auto;
-  width: 350px; /* Fixed width */
+  width: 350px; /* Fixed width */ 
 }
 /* Styles for the chart component */
 .chart-container {
@@ -185,8 +185,8 @@
   margin-left: 5px;
   border: none;
   background-color: transparent;
-  color:  #333;/* Adjust this based on your background color for better visibility */
-  font-size: 15px; /* Reduce font size */
+  color:  #333;
+  font-size: 13px; 
   font-family: 'Inter', sans-serif;
   width: 50px; /* Adjust width to fit the text "Search" */
 }
@@ -196,8 +196,8 @@
 }
 
 .search-icon {
-  font-size: 13px; /* Reduce icon size */
-  color: #989898; /* Adjust this based on your background color */
+  font-size: 12px;
+  color: #989898; 
 }
 
 .title-and-search {
@@ -206,7 +206,7 @@
   align-items: center;
   /* position: sticky;
   top: 0;
-  background-color: inherit; */
+  background-color: inherit;  */
 }
 
 .left-aligned-title {

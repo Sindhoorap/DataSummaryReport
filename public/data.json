@@ -1,401 +1,172 @@
 
 {
   "testDetails": [
-    { "TestId": 17111908765, "RunDate": "2024-03-22 18:04:34","Description": "NBCU: Scenario 4-Chaos test(GTM)- East 1M (Peak 1)", "Test": "Soak", "PeakNumber":1,"PeakDuration":300,"ValidTestRun": "Invalid", "Status": "None"},
-    { "TestId": 11111908765, "Description": "NBCU: Scenario 4-Chaos test(GTM)- East 1M (Peak 1)", "Test": "Soak", "PeakNumber":1,"PeakDuration":300,"ValidTestRun": "Invalid", "Status": "None"}
+    { "TestId": 17111908765, "RunDate": "2024-03-22 18:04:34","Description": "NBCU: Scenario 4-Chaos test(GTM)- East 1M (Peak 1)", "Test": "Soak", "PeakNumber":7,"PeakDuration":300,"ValidTestRun": "Invalid", "Status": "None"},
+    { "TestId": 11111908765, "Description": "NBCU: Scenario 4-Chaos test(GTM)- West 1M (Peak 1)", "Test": "Soak", "PeakNumber":8,"PeakDuration":500,"ValidTestRun": "Invalid", "Status": "None"}
 
   ],
   
     "data": [
       {
         "Time": "9:49:15",
-        "Signups": 0,
+        "Signups": 2,
         "Concurrency": 1,
         "Live Success": 0
       },
       {
         "Time": "9:49:30",
-        "Signups": 0,
+        "Signups": 4,
         "Concurrency": 82,
         "Live Success": 0
       },
-      {
-        "Time": "9:49:45",
-        "Signups": 0,
-        "Concurrency": 538,
-        "Live Success": 0
-      },
-      {
-        "Time": "9:50:00",
-        "Signups": 0,
-        "Concurrency": 1591,
-        "Live Success": 0
-      },
-      {
-        "Time": "9:50:15",
-        "Signups": 0,
-        "Concurrency": 3092,
-        "Live Success": 0
-      },
+      
       {
         "Time": "9:50:30",
-        "Signups": 0,
+        "Signups": 25,
         "Concurrency": 5370,
         "Live Success": 0
       },
       {
         "Time": "9:50:45",
-        "Signups": 0,
+        "Signups": 67,
         "Concurrency": 7895,
         "Live Success": 0
       },
-      {
-        "Time": "9:51:00",
-        "Signups": 0,
-        "Concurrency": 11397,
-        "Live Success": 0
-      },
+     
       {
         "Time": "9:51:15",
-        "Signups": 0,
+        "Signups": 56,
         "Concurrency": 14990,
         "Live Success": 0
       },
       {
         "Time": "9:51:30",
-        "Signups": 1.2,
+        "Signups": 30,
         "Concurrency": 19618,
         "Live Success": 0
       },
-      {
-        "Time": "9:51:45",
-        "Signups": 2.3,
-        "Concurrency": 24175,
-        "Live Success": 0
-      },
+     
+      
       {
         "Time": "9:52:00",
-        "Signups": 2.3,
+        "Signups": 25,
         "Concurrency": 29958,
         "Live Success": 2.67
       },
       {
         "Time": "9:52:15",
-        "Signups": 2.9,
+        "Signups": 25,
         "Concurrency": 35517,
         "Live Success": 2.67
       },
       {
         "Time": "9:52:30",
-        "Signups": 2.9,
+        "Signups": 50,
         "Concurrency": 42422,
         "Live Success": 32.2
       },
       {
         "Time": "9:52:45",
-        "Signups": 3.6,
+        "Signups": 60,
         "Concurrency": 48941,
         "Live Success": 32.2
       },
       {
         "Time": "9:53:00",
-        "Signups": 3.6,
+        "Signups": 70,
         "Concurrency": 56946,
         "Live Success": 49.9
       },
-      {
-        "Time": "9:53:15",
-        "Signups": 4.73,
-        "Concurrency": 64444,
-        "Live Success": 49.9
-      },
-      {
-        "Time": "9:53:30",
-        "Signups": 4.73,
-        "Concurrency": 73487,
-        "Live Success": 65.8
-      },
+     
       {
         "Time": "9:53:45",
-        "Signups": 5.83,
+        "Signups": 200,
         "Concurrency": 82158,
         "Live Success": 65.8
       },
       {
-        "Time": "9:54:00","Signups": 5.83,
+        "Time": "9:54:00",
+        "Signups": 200,
         "Concurrency": 92785,
         "Live Success": 82
       },
       {
         "Time": "9:54:15",
-        "Signups": 5.2,
+        "Signups": 200,
         "Concurrency": 101880,
         "Live Success": 82
       },
       {
         "Time": "9:54:30",
-        "Signups": 5.2,
+        "Signups": 200,
         "Concurrency": 112262,
         "Live Success": 97.2
       },
-      {
-        "Time": "9:54:45",
-        "Signups": 4.4,
-        "Concurrency": 121418,
-        "Live Success": 97.2
-      },
+      
       {
         "Time": "9:55:00",
-        "Signups": 4.4,
+        "Signups": 200,
         "Concurrency": 131952,
         "Live Success": 113
       },
       {
         "Time": "9:55:15",
-        "Signups": 5.03,
+        "Signups": 200,
         "Concurrency": 141201,
         "Live Success": 113
       },
-      {
-        "Time": "9:55:30",
-        "Signups": 5.03,
-        "Concurrency": 152015,
-        "Live Success": 130
-      },
-      {
-        "Time": "9:55:45",
-        "Signups": 4.6,
-        "Concurrency": 161441,
-        "Live Success": 130
-      },
+     
       {
         "Time": "9:56:00",
-        "Signups": 4.6,
+        "Signups": 90,
         "Concurrency": 172373,
         "Live Success": 145
       },
       {
         "Time": "9:56:15",
-        "Signups": 5,
+        "Signups": 80,
         "Concurrency": 181900,
         "Live Success": 145
       },
-      {
-        "Time": "9:56:30",
-        "Signups": 5,
-        "Concurrency": 192985,
-        "Live Success": 160
-      },
-      {
-        "Time": "9:56:45",
-        "Signups": 5.7,
-        "Concurrency": 202721,
-        "Live Success": 160
-      },
+     
       {
         "Time": "9:57:00",
-        "Signups": 5.7,
+        "Signups": 200,
         "Concurrency": 214182,
         "Live Success": 175
       },
       {
         "Time": "9:57:15",
-        "Signups": 5.53,
+        "Signups": 200,
         "Concurrency": 224929,
         "Live Success": 175
       },
       {
         "Time": "9:57:30",
-        "Signups": 5.53,
+        "Signups": 100,
         "Concurrency": 237204,
         "Live Success": 194
       },
       {
         "Time": "9:57:45",
-        "Signups": 4.43,
+        "Signups": 100.43,
         "Concurrency": 247023,
         "Live Success": 194
       },
       {
         "Time": "9:58:00",
-        "Signups": 4.43,
+        "Signups": 90.43,
         "Concurrency": 258313,
         "Live Success": 206
       },
-      {
-        "Time": "9:58:15",
-        "Signups": 5.1,
-        "Concurrency": 268166,
-        "Live Success": 206
-      },
-      {
-        "Time": "9:58:30",
-        "Signups": 5.1,
-        "Concurrency": 279458,
-        "Live Success": 221
-      },
-      {
-        "Time": "9:58:45",
-        "Signups": 4.57,
-        "Concurrency": 289288,
-        "Live Success": 221
-      },
+      
       {
         "Time": "9:59:00",
-        "Signups": 4.57,
+        "Signups": 97,
         "Concurrency": 300686,
         "Live Success": 250
       },
-      {
-        "Time": "9:59:15",
-        "Signups": 5.3,
-        "Concurrency": 310518,
-        "Live Success": 250
-      },
-      {
-        "Time": "9:59:30",
-        "Signups": 5.3,
-        "Concurrency": 321867,
-        "Live Success": 262
-      },
-      {
-        "Time": "9:59:45",
-        "Signups": 4.87,
-        "Concurrency": 331433,
-        "Live Success": 262
-      },
-      {
-        "Time": "10:00:00",
-        "Signups": 4.87,
-        "Concurrency": 342130,
-        "Live Success": 245
-      },
-      {
-        "Time": "10:00:15",
-        "Signups": 6.6,
-        "Concurrency": 351077,
-        "Live Success": 245
-      },
-      {
-        "Time": "10:00:30",
-        "Signups": 6.6,
-        "Concurrency": 361165,
-        "Live Success": 248
-      },
-      {
-        "Time": "10:00:45",
-        "Signups": 4.47,
-        "Concurrency": 369577,
-        "Live Success": 248
-      },
-      {
-        "Time": "10:01:00",
-        "Signups": 4.47,
-        "Concurrency": 378828,
-        "Live Success": 247
-      },
-      {
-        "Time": "10:01:15",
-        "Signups": 5.37,
-        "Concurrency": 386568,
-        "Live Success": 247
-      },
-      {
-        "Time": "10:01:30",
-        "Signups": 5.37,
-        "Concurrency": 395308,
-        "Live Success": 248
-      },
-      {
-        "Time": "10:01:45",
-        "Signups": 4.6,
-        "Concurrency": 402399,
-        "Live Success": 248
-      },
-      {
-        "Time": "10:02:00",
-        "Signups": 4.6,
-        "Concurrency": 409978,
-        "Live Success": 246
-      },
-      {
-        "Time": "10:02:15",
-        "Signups": 5.23,
-        "Concurrency": 415955,
-        "Live Success": 246
-      },
-      {
-        "Time": "10:02:30",
-        "Signups": 5.23,
-        "Concurrency": 422454,
-        "Live Success": 246
-      },
-      {
-        "Time": "10:02:45",
-        "Signups": 4.43,
-        "Concurrency": 427428,
-        "Live Success": 244
-      },
-      {
-        "Time": "10:03:00",
-        "Signups": 4.43,
-        "Concurrency": 432660,
-        "Live Success": 244
-      },
-      {
-        "Time": "10:03:15",
-        "Signups": 4.47,
-        "Concurrency": 436453,
-        "Live Success": 242
-      },
-      {
-        "Time": "10:03:30",
-        "Signups": 4.47,
-        "Concurrency": 442157,
-        "Live Success": 242
-      },
-      {
-        "Time": "10:03:45",
-        "Signups": 4.33,
-        "Concurrency": 445449,
-        "Live Success": 241
-      },
-      {
-        "Time": "10:04:00",
-        "Signups": 4.33,
-        "Concurrency": 447598,
-        "Live Success": 240
-      },
-      {
-        "Time": "10:04:15",
-        "Signups": 5.3,
-        "Concurrency": 453449,
-        "Live Success": 240
-      },
-      {
-        "Time": "10:04:30",
-        "Signups": 5.3,
-        "Concurrency": 457429,
-        "Live Success": 241
-      },
-      {
-        "Time": "10:04:45",
-        "Signups": 4.23,
-        "Concurrency": 462611,
-        "Live Success": 240
-      },
-      {
-        "Time": "10:05:00",
-        "Signups": 4.23,
-        "Concurrency": 467392,
-        "Live Success": 238
-      },
-      {
-        "Time": "10:05:15",
-        "Signups": 5.47,
-        "Concurrency": 471908,
-        "Live Success": 238
-      },
+     
       {
         "Time": "10:05:30",
         "Signups": 5.47,
@@ -414,204 +185,16 @@
         "Concurrency": 484662,
         "Live Success": 238
       },
-      {
-        "Time": "10:06:15",
-        "Signups": 4.5,
-        "Concurrency": 489541,
-        "Live Success": 238
-      },
-      {
-        "Time": "10:06:30",
-        "Signups": 4.5,
-        "Concurrency": 493567,
-        "Live Success": 238
-      },
-      {
-        "Time": "10:06:45",
-        "Signups": 5.4,
-        "Concurrency": 496556,
-        "Live Success": 237
-      },
-      {
-        "Time": "10:07:00",
-        "Signups": 5.4,
-        "Concurrency": 501318,
-        "Live Success": 236
-      },
-      {
-        "Time": "10:07:15",
-        "Signups": 5.2,
-        "Concurrency": 504857,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:07:30",
-        "Signups": 5.2,
-        "Concurrency": 508345,
-        "Live Success": 236
-      },
-      {
-        "Time": "10:07:45",
-        "Signups": 4.83,
-        "Concurrency": 511578,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:08:00",
-        "Signups": 4.83,
-        "Concurrency": 516432,
-        "Live Success": 236
-      },
-      {
-        "Time": "10:08:15",
-        "Signups": 4.5,
-        "Concurrency": 521398,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:08:30",
-        "Signups": 4.5,
-        "Concurrency": 526370,
-        "Live Success": 236
-      },
-      {
-        "Time": "10:08:45",
-        "Signups": 4.33,
-        "Concurrency": 531437,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:09:00",
-        "Signups": 4.33,
-        "Concurrency": 535704,
-        "Live Success": 236
-      },
-      {
-        "Time": "10:09:15",
-        "Signups": 5.27,
-        "Concurrency": 538688,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:09:30",
-        "Signups": 5.27,
-        "Concurrency": 543377,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:09:45",
-        "Signups": 4.77,
-        "Concurrency": 546525,
-        "Live Success": 236
-      },
-      {
-        "Time": "10:10:00",
-        "Signups": 4.77,
-        "Concurrency": 550598,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:10:15",
-        "Signups": 5.47,
-        "Concurrency": 553598,
-        "Live Success": 236
-      },
-      {
-        "Time": "10:10:30",
-        "Signups": 5.47,
-        "Concurrency": 556585,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:10:45",
-        "Signups": 5.33,
-        "Concurrency": 561472,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:11:00",
-        "Signups": 5.33,
-        "Concurrency": 566121,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:11:15",
-        "Signups": 4.73,
-        "Concurrency": 571482,
-        "Live Success": 236
-      },
-      {
-        "Time": "10:11:30",
-        "Signups": 4.73,
-        "Concurrency": 576310,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:11:45",
-        "Signups": 5.17,
-        "Concurrency": 581541,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:12:00",
-        "Signups": 5.17,
-        "Concurrency": 585448,
-        "Live Success": 236
-      },
-      {
-        "Time": "10:12:15",
-        "Signups": 4.57,
-        "Concurrency": 590359,
-        "Live Success": 236
-      },
-      {
-        "Time": "10:12:30",
-        "Signups": 4.57,
-        "Concurrency": 595428,
-        "Live Success": 236
-      },
-      {
-        "Time": "10:12:45",
-        "Signups": 5.43,
-        "Concurrency": 600534,
-        "Live Success": 236
-      },
-      {
-        "Time": "10:13:00",
-        "Signups": 5.43,
-        "Concurrency": 605511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:13:15",
-        "Signups": 4.63,
-        "Concurrency": 610603,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:13:30",
-        "Signups": 4.63,
-        "Concurrency": 614449,
-        "Live Success": 236
-      },
-      {
-        "Time": "10:13:45",
-        "Signups": 4.97,
-        "Concurrency": 618763,
-        "Live Success": 235
-      },
+      
+     
+     
       {
         "Time": "10:14:00",
         "Signups": 4.97,
         "Concurrency": 622452,
         "Live Success": 235
       },
-      {
-        "Time": "10:14:15",
-        "Signups": 4.83,
-        "Concurrency": 627317,
-        "Live Success": 236
-      },
+     
       {
         "Time": "10:14:30",
         "Signups": 4.83,
@@ -624,120 +207,7 @@
         "Concurrency": 636918,
         "Live Success": 235
       },
-      {
-        "Time": "10:15:00",
-        "Signups": 5.43,
-        "Concurrency": 642415,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:15:15",
-        "Signups": 5.33,
-        "Concurrency": 646914,
-        "Live Success": 236
-      },
-      {
-        "Time": "10:15:30",
-        "Signups": 5.33,
-        "Concurrency": 650582,
-        "Live Success": 236
-      },
-      {
-        "Time": "10:15:45",
-        "Signups": 4.87,
-        "Concurrency": 655223,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:16:00",
-        "Signups": 4.87,
-        "Concurrency": 660374,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:16:15",
-        "Signups": 5.43,
-        "Concurrency": 665517,
-        "Live Success": 236
-      },
-      {
-        "Time": "10:16:30",
-        "Signups": 5.43,
-        "Concurrency": 670182,
-        "Live Success": 236
-      },
-      {
-  "Time": "10:16:45",
-        "Signups": 5.1,
-        "Concurrency": 674541,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:17:00",
-        "Signups": 5.1,
-        "Concurrency": 679511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:17:15",
-        "Signups": 5.1,
-        "Concurrency": 684511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:17:30",
-        "Signups": 4.8,
-        "Concurrency": 689511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:17:45",
-        "Signups": 4.8,
-        "Concurrency": 694511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:18:00",
-        "Signups": 5.1,
-        "Concurrency": 699511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:18:15",
-        "Signups": 5.1,
-        "Concurrency": 704511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:18:30",
-        "Signups": 4.8,
-        "Concurrency": 709511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:18:45",
-        "Signups": 4.8,
-        "Concurrency": 714511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:19:00",
-        "Signups": 5.1,
-        "Concurrency": 719511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:19:15",
-        "Signups": 5.1,
-        "Concurrency": 724511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:19:30",
-        "Signups": 4.8,
-        "Concurrency": 729511,
-        "Live Success": 235
-      },
+      
       {
         "Time": "10:19:45",
         "Signups": 4.8,
@@ -750,24 +220,7 @@
         "Concurrency": 739511,
         "Live Success": 235
       },
-      {
-        "Time": "10:20:15",
-        "Signups": 5.1,
-        "Concurrency": 744511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:20:30",
-        "Signups": 4.8,
-        "Concurrency": 749511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:20:45",
-        "Signups": 4.8,
-        "Concurrency": 754511,
-        "Live Success": 235
-      },
+      
       {
         "Time": "10:21:00",
         "Signups": 5.1,
@@ -780,464 +233,36 @@
         "Concurrency": 764511,
         "Live Success": 235
       },
-      {
-        "Time": "10:21:30",
-        "Signups": 4.8,
-        "Concurrency": 769511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:21:45",
-        "Signups": 4.8,
-        "Concurrency": 774511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:22:00",
-        "Signups": 5.1,
-        "Concurrency": 779511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:22:15",
-        "Signups": 5.1,
-        "Concurrency": 784511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:22:30",
-        "Signups": 4.8,
-        "Concurrency": 789511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:22:45",
-        "Signups": 4.8,
-        "Concurrency": 794511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:23:00",
-        "Signups": 5.1,
-        "Concurrency": 799511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:23:15",
-        "Signups": 5.1,
-        "Concurrency": 804511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:23:30",
-        "Signups": 4.8,
-        "Concurrency": 809511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:23:45",
-        "Signups": 4.8,
-        "Concurrency": 814511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:24:00",
-        "Signups": 5.1,
-        "Concurrency": 819511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:24:15",
-        "Signups": 5.1,
-        "Concurrency": 824511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:24:30",
-        "Signups": 4.8,
-        "Concurrency": 829511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:24:45",
-        "Signups": 4.8,
-        "Concurrency": 834511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:25:00",
-        "Signups": 5.1,
-        "Concurrency": 839511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:25:15",
-        "Signups": 5.1,
-        "Concurrency": 844511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:25:30",
-        "Signups": 4.8,
-        "Concurrency": 849511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:25:45",
-        "Signups": 4.8,
-        "Concurrency": 854511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:26:00",
-        "Signups": 5.1,
-        "Concurrency": 859511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:26:15",
-        "Signups": 5.1,
-        "Concurrency": 864511,
-        "Live Success": 235
-      },
+     
+      
       {
         "Time": "10:26:30",
-        "Signups": 4.8,
+        "Signups": 200,
         "Concurrency": 869511,
         "Live Success": 235
       },
       {
         "Time": "10:26:45",
-        "Signups": 4.8,
+        "Signups": 150,
         "Concurrency": 874511,
         "Live Success": 235
       },
-      {
-        "Time": "10:27:00",
-        "Signups": 5.1,
-        "Concurrency": 879511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:27:15",
-        "Signups": 5.1,
-        "Concurrency": 884511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:27:30",
-        "Signups": 4.8,
-        "Concurrency": 889511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:27:45",
-        "Signups": 4.8,
-        "Concurrency": 894511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:28:00",
-        "Signups": 5.1,
-        "Concurrency": 899511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:28:15",
-        "Signups": 5.1,
-        "Concurrency": 904511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:28:30",
-        "Signups": 4.8,
-        "Concurrency": 909511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:28:45",
-        "Signups": 4.8,
-        "Concurrency": 914511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:29:00",
-        "Signups": 5.1,
-        "Concurrency": 919511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:29:15",
-        "Signups": 5.1,
-        "Concurrency": 924511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:29:30",
-        "Signups": 4.8,
-        "Concurrency": 929511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:29:45",
-        "Signups": 4.8,
-        "Concurrency": 934511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:30:00",
-        "Signups": 5.1,
-        "Concurrency": 939511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:30:15",
-        "Signups": 5.1,
-        "Concurrency": 944511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:30:30",
-        "Signups": 4.8,
-        "Concurrency": 949511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:30:45",
-        "Signups": 4.8,
-        "Concurrency": 954511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:31:00",
-        "Signups": 5.1,
-        "Concurrency": 959511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:31:15",
-        "Signups": 5.1,
-        "Concurrency": 964511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:31:30",
-        "Signups": 4.8,
-        "Concurrency": 969511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:31:45",
-        "Signups": 4.8,
-        "Concurrency": 974511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:32:00",
-        "Signups": 5.1,
-        "Concurrency": 979511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:32:15",
-        "Signups": 5.1,
-        "Concurrency": 984511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:32:30",
-        "Signups": 4.8,
-        "Concurrency": 989511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:32:45",
-        "Signups": 4.8,
-        "Concurrency": 994511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:33:00",
-        "Signups": 5.1,
-        "Concurrency": 999511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:33:15",
-        "Signups": 5.1,
-        "Concurrency": 1004511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:33:30",
-        "Signups": 4.8,
-        "Concurrency": 1009511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:33:45",
-        "Signups": 4.8,
-        "Concurrency": 1014511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:34:00",
-        "Signups": 5.1,
-        "Concurrency": 1019511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:34:15",
-        "Signups": 5.1,
-        "Concurrency": 1024511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:34:30",
-        "Signups": 4.8,
-        "Concurrency": 1029511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:34:45",
-        "Signups": 4.8,
-        "Concurrency": 1034511,
-        "Live Success": 235
-      },
-      {
-       "Time": "10:35:00",
-        "Signups": 5.1,
-        "Concurrency": 1039511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:35:15",
-        "Signups": 5.1,
-        "Concurrency": 1044511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:35:30",
-        "Signups": 4.8,
-        "Concurrency": 1049511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:35:45",
-        "Signups": 4.8,
-        "Concurrency": 1054511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:36:00",
-        "Signups": 5.1,
-        "Concurrency": 1059511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:36:15",
-        "Signups": 5.1,
-        "Concurrency": 1064511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:36:30",
-        "Signups": 4.8,
-        "Concurrency": 1069511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:36:45",
-        "Signups": 4.8,
-        "Concurrency": 1074511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:37:00",
-        "Signups": 5.1,
-        "Concurrency": 1079511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:37:15",
-        "Signups": 5.1,
-        "Concurrency": 1084511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:37:30",
-        "Signups": 4.8,
-        "Concurrency": 1089511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:37:45",
-        "Signups": 4.8,
-        "Concurrency": 1094511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:38:00",
-        "Signups": 5.1,
-        "Concurrency": 1099511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:38:15",
-        "Signups": 5.1,
-        "Concurrency": 1104511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:38:30",
-        "Signups": 4.8,
-        "Concurrency": 1109511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:38:45",
-        "Signups": 4.8,
-        "Concurrency": 1114511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:39:00",
-        "Signups": 5.1,
-        "Concurrency": 1119511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:39:15",
-        "Signups": 5.1,
-        "Concurrency": 1124511,
-        "Live Success": 235
-      },
-      {"Time": "10:39:30",
-        "Signups": 4.8,
-        "Concurrency": 1129511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:39:45",
-        "Signups": 4.8,
-        "Concurrency": 1134511,
-        "Live Success": 235
-      },
+      
       {
         "Time": "10:40:00",
-        "Signups": 5.1,
+        "Signups": 90.1,
         "Concurrency": 1139511,
         "Live Success": 235
       },
       {
         "Time": "10:40:15",
-        "Signups": 5.1,
+        "Signups": 100.1,
         "Concurrency": 1144511,
         "Live Success": 235
       },
       {
         "Time": "10:40:30",
-        "Signups": 4.8,
+        "Signups": 99.8,
         "Concurrency": 1149511,
         "Live Success": 235
       },
@@ -1247,30 +272,7 @@
         "Concurrency": 1154511,
         "Live Success": 235
       },
-      {
-        "Time": "10:41:00",
-        "Signups": 5.1,
-        "Concurrency": 1159511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:41:15",
-        "Signups": 5.1,
-        "Concurrency": 1164511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:41:30",
-        "Signups": 4.8,
-        "Concurrency": 1169511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:41:45",
-        "Signups": 4.8,
-        "Concurrency": 1174511,
-        "Live Success": 235
-      },
+      
       {
         "Time": "10:42:00",
         "Signups": 5.1,
@@ -1289,24 +291,7 @@
         "Concurrency": 1189511,
         "Live Success": 235
       },
-      {
-        "Time": "10:42:45",
-        "Signups": 4.8,
-        "Concurrency": 1194511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:43:00",
-        "Signups": 5.1,
-        "Concurrency": 1199511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:43:15",
-        "Signups": 5.1,
-        "Concurrency": 1204511,
-        "Live Success": 235
-      },
+    
       {
         "Time": "10:43:30",
         "Signups": 4.8,
@@ -1319,240 +304,7 @@
         "Concurrency": 1214511,
         "Live Success": 235
       },
-  {
-        "Time": "10:44:00",
-        "Signups": 5.1,
-        "Concurrency": 1219511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:44:15",
-        "Signups": 5.1,
-        "Concurrency": 1224511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:44:30",
-        "Signups": 4.8,
-        "Concurrency": 1229511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:44:45",
-        "Signups": 4.8,
-        "Concurrency": 1234511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:45:00",
-        "Signups": 5.1,
-        "Concurrency": 1239511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:45:15",
-        "Signups": 5.1,
-        "Concurrency": 1244511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:45:30",
-        "Signups": 4.8,
-        "Concurrency": 1249511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:45:45",
-        "Signups": 4.8,
-        "Concurrency": 1254511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:46:00",
-        "Signups": 5.1,
-        "Concurrency": 1259511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:46:15",
-        "Signups": 5.1,
-        "Concurrency": 1264511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:46:30",
-        "Signups": 4.8,
-        "Concurrency": 1269511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:46:45",
-        "Signups": 4.8,
-        "Concurrency": 1274511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:47:00",
-        "Signups": 5.1,
-        "Concurrency": 1279511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:47:15",
-        "Signups": 5.1,
-        "Concurrency": 1284511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:47:30",
-        "Signups": 4.8,
-        "Concurrency": 1289511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:47:45",
-        "Signups": 4.8,
-        "Concurrency": 1294511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:48:00",
-        "Signups": 5.1,
-        "Concurrency": 1299511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:48:15",
-        "Signups": 5.1,
-        "Concurrency": 1304511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:48:30",
-        "Signups": 4.8,
-        "Concurrency": 1309511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:48:45",
-        "Signups": 4.8,
-        "Concurrency": 1314511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:49:00",
-        "Signups": 5.1,
-        "Concurrency": 1319511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:49:15",
-        "Signups": 5.1,
-        "Concurrency": 1324511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:49:30",
-        "Signups": 4.8,
-        "Concurrency": 1329511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:49:45",
-        "Signups": 4.8,
-        "Concurrency": 1334511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:50:00",
-        "Signups": 5.1,
-        "Concurrency": 1339511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:50:15",
-        "Signups": 5.1,
-        "Concurrency": 1344511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:50:30",
-        "Signups": 4.8,
-        "Concurrency": 1349511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:50:45",
-        "Signups": 4.8,
-        "Concurrency": 1354511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:51:00",
-        "Signups": 5.1,
-        "Concurrency": 1359511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:51:15",
-        "Signups": 5.1,
-        "Concurrency": 1364511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:51:30",
-        "Signups": 4.8,
-        "Concurrency": 1369511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:51:45",
-        "Signups": 4.8,
-        "Concurrency": 1374511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:52:00",
-        "Signups": 5.1,
-        "Concurrency": 1379511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:52:15",
-        "Signups": 5.1,
-        "Concurrency": 1384511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:52:30",
-        "Signups": 4.8,
-        "Concurrency": 1389511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:52:45",
-        "Signups": 4.8,
-        "Concurrency": 1394511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:53:00",
-        "Signups": 5.1,
-        "Concurrency": 1399511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:53:15",
-        "Signups": 5.1,
-        "Concurrency": 1404511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:53:30",
-        "Signups": 4.8,
-        "Concurrency": 1409511,
-        "Live Success": 235
-      },
+ 
       {
         "Time": "10:53:45",
         "Signups": 4.8,
@@ -1583,36 +335,8 @@
         "Concurrency": 1434511,
         "Live Success": 235
       },
-      {
-        "Time": "10:55:00",
-        "Signups": 5.1,
-        "Concurrency": 1439511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:55:15",
-        "Signups": 5.1,
-        "Concurrency": 1444511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:55:30",
-        "Signups": 4.8,
-        "Concurrency": 1449511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:55:45",
-        "Signups": 4.8,
-        "Concurrency": 1454511,
-        "Live Success": 235
-      },
-      {
-        "Time": "10:56:00",
-        "Signups": 5.1,
-        "Concurrency": 1459511,
-        "Live Success": 235
-      },
+   
+    
       {
         "Time": "10:56:15",
         "Signups": 5.1,

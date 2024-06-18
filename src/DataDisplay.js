@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './styles.css'; // Import the CSS file for styling
+import React, { useState, useEffect } from 'react';
+import './styles.css'; 
 import ChartComponent from './ChartComponent';
 import ChartComponentTwo from './ChartComponentTwo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,10 +12,33 @@ function DataDisplay({ testDetails }) {
     const [error, setError] = useState(null);
     const [showDisabledFeatures, setShowDisabledFeatures] = useState(false);
     const [searchQuery, setSearchQuery] = useState('');
+    const [searchResults, setSearchResults] = useState([]);
+    const [showSearchPrompt, setShowSearchPrompt] = useState(false);
+    const [testSettingsSearchQuery, setTestSettingsSearchQuery] = useState('');
+
+    useEffect(() => {
+        if (searchQuery) {
+            const filteredDetails = testDetails.flatMap(detail =>
+                Object.entries(detail).filter(([key, value]) =>
+                    value.toString().toLowerCase().split(/\W+/).includes(searchQuery.toLowerCase())
+                ).map(([key, value]) => ({ TestId: detail.TestId, matchKey: key, matchValue: value }))
+            );
+
+            if (filteredDetails.length > 0) {
+                setSearchResults(filteredDetails);
+                setShowSearchPrompt(true);
+            } else {
+                setSearchResults([]);
+                setShowSearchPrompt(false);
+            }
+        } else {
+            setSearchResults([]);
+            setShowSearchPrompt(false);
+        }
+    }, [searchQuery, testDetails]);
 
     // Function to handle TestId selection change
-    const handleTestIdChange = (event) => {
-        const id = parseInt(event.target.value);
+    const handleTestIdChange = (id) => {
         setSelectedTestId(id);
         const selectedDetail = testDetails.find(detail => detail.TestId === id);
         setSelectedTestDetail(selectedDetail);
@@ -26,7 +49,7 @@ function DataDisplay({ testDetails }) {
 
     // Fetch test settings based on the selected test ID
     const fetchTestSettings = (testId) => {
-        fetch(`/testSettings{id}.json`) // Adjust the path based on your file structure
+        fetch(`/testSettings{id}.json`) 
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
@@ -47,6 +70,9 @@ function DataDisplay({ testDetails }) {
     const zeroValueSettings = Object.entries(testSettingsData).filter(([key, value]) => value === 0).map(([key]) => key);
     const nonZeroValueSettings = Object.entries(testSettingsData).filter(([key, value]) => value !== 0);
 
+    // Filter the non-zero value settings based on the test settings search query
+    const filteredNonZeroValueSettings = nonZeroValueSettings.filter(([key]) => key.toLowerCase().includes(testSettingsSearchQuery.toLowerCase()));
+
     // Toggle the visibility of disabled features box
     const toggleDisabledFeatures = () => {
         setShowDisabledFeatures(!showDisabledFeatures);
@@ -62,24 +88,43 @@ function DataDisplay({ testDetails }) {
         return showDisabledFeatures ? "Other Features" : "Test Settings";
     };
 
-    // Function to handle search input change
+    // Function to handle search input change for test details
     const handleSearchChange = (event) => {
         setSearchQuery(event.target.value);
     };
 
-    // Filter the non-zero value settings based on the search query
-    const filteredNonZeroValueSettings = nonZeroValueSettings.filter(([key]) => key.toLowerCase().includes(searchQuery.toLowerCase()));
+    // Function to handle search input change for test settings
+    const handleTestSettingsSearchChange = (event) => {
+        setTestSettingsSearchQuery(event.target.value);
+    };
 
     return (
         <div>
             <h1 className="test-details-title">Performance Test Results - NBCU US</h1>
             <hr className="title-line" />
-            <select value={selectedTestId} onChange={handleTestIdChange} className="my-dropdown">
-                <option value="">Select TestId</option>
-                {testDetails.map(detail => (
-                    <option key={detail.TestId} value={detail.TestId}>{detail.TestId}</option>
-                ))}
-            </select>
+            <div className="search-container">
+                <FontAwesomeIcon icon={faSearch} className="search-icon" />
+                <input
+                    type="text"
+                    placeholder="Search"
+                    value={searchQuery}
+                    onChange={handleSearchChange}
+                    className="search-input"
+                />
+            </div>
+            {showSearchPrompt && (
+                <div className="search-results">
+                    <p>Search Results for "{searchQuery}":</p>
+                    <ul>
+                        {searchResults.map((detail, index) => (
+                            <li key={index} onClick={() => handleTestIdChange(detail.TestId)}>
+                                <strong>TestId:</strong> {detail.TestId}<br />
+                                <strong>{detail.matchKey}:</strong> {detail.matchValue.toString()}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            )}
             <br />
             {selectedTestDetail && (
                 <div className="selected-test-details">
@@ -162,8 +207,8 @@ function DataDisplay({ testDetails }) {
                                     <input
                                         type="text"
                                         placeholder="Search"
-                                        value={searchQuery}
-                                        onChange={handleSearchChange}
+                                        value={testSettingsSearchQuery}
+                                        onChange={handleTestSettingsSearchChange}
                                         className="search-input"
                                     />
                                 </div>
